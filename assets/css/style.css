@@ -1,0 +1,1699 @@
+@charset "utf-8";
+
+:root {
+  --darkgreen: #307c4f;
+  --limegreen: #90c31e;
+  --btncolor: #03561e;
+  --bannerbgcolor: #eff8e3;
+  --bg-color: #f5f5f5;
+}
+
+/* ===============================
+Top Page
+=============================== */
+body {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.text-limegreen {
+  color: var(--limegreen);
+}
+
+.text-btncolor {
+  color: var(--btncolor);
+}
+
+.text-justify {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.poppins {
+  font-family: Poppins;
+}
+
+.leftcontainer h6 {
+  margin: 0;
+  margin: 20px 0px;
+  /* padding: 0; */
+}
+
+.tsukumirounded {
+  font-family: "Tsukimi Rounded", sans-serif;
+}
+
+.notoserif {
+  font-family: "Noto Serif";
+}
+
+.notosan {
+  font-family: "Noto Sans";
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hiraginokaku {
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.displaycenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-primary {
+  color: var(--limegreen);
+}
+
+/* start navbar  */
+
+.customnavbar {
+  background: #ffffff;
+  width: 90%;
+  max-width: 1200px;
+  height: 80px;
+
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 30px;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.brandtext {
+  color: black;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.brand,
+.brandlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandlink img {
+  width: 64px;
+  height: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.brandbtn {
+  width: 160px;
+  height: 40px;
+  background: var(--darkgreen);
+
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+.nav-group li {
+  list-style-type: none;
+}
+
+.nav-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.nav-link.brandbtn {
+  color: white;
+}
+
+.nav-link.active {
+  background: var(--btncolor);
+  color: white;
+}
+
+.nav-group .nav-link:hover {
+  background: rgba(3, 86, 30, 0.1);
+}
+
+.brandtext {
+  font-size: 20px;
+}
+
+/* end navbar  */
+
+.banner {
+  width: 100%;
+  /* height: max-content; */
+  height: auto;
+  min-height: 700px;
+  /* min-height: 100vh; */
+
+  background: var(--bannerbgcolor);
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+
+  /* min-height: 700px; */
+
+  margin: auto;
+  margin-top: 150px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  z-index: 0;
+}
+
+.headertext h3,
+.headertext h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.bannerparagraph {
+  line-height: 1.9;
+}
+
+.floatcontainer {
+  width: 95%;
+  max-width: 1000px;
+  height: auto;
+  min-height: 200px;
+  border-radius: 40px;
+  background: white;
+
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  box-shadow: 6px 10px 10px #eee;
+
+  position: relative;
+  z-index: 0;
+
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  place-items: center;
+}
+
+.leftcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.dateandtext {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.floatbtncontainer {
+  width: 100%;
+}
+
+.floatbtncontainer p a {
+  color: black;
+}
+
+.leftcontainer {
+  border-right: 1px dotted #000;
+}
+
+.datelink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.datelink a {
+  color: var(--btncolor);
+}
+
+.floatlink {
+  width: 20px;
+  height: 20px;
+
+  display: block;
+  background: var(--btncolor);
+
+  border-radius: 50%;
+  margin-left: 20px;
+
+  position: relative;
+}
+
+.floatlink::before {
+  content: "";
+
+  width: 8px;
+  height: 8px;
+
+  background: url("../icons/left.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textcontainer {
+  width: 40%;
+  max-width: 520px;
+
+  height: auto;
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+
+  /* background: url(../img/bannermap.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  background-size: 100%; */
+  position: relative;
+}
+
+.child {
+  width: 110%;
+  height: 100%;
+
+  position: absolute; /* Allows overlapping */
+  top: 0;
+  left: 0;
+  background: url(../img/bannermap.png);
+  background-repeat: no-repeat;
+  background-position: 110% 0%;
+
+  background-size: 100%;
+}
+
+.textcontainer h2 {
+  font-size: 40px;
+}
+
+.bannerphotocontainer {
+  width: 60%;
+
+  position: relative;
+  /* background-color: yellow; */
+}
+
+.bannerphoto {
+  position: absolute;
+  bottom: -306px;
+  left: -15px;
+}
+
+.bannerphoto img {
+  width: 100%;
+}
+
+.bannerbtn {
+  width: 100%;
+  max-width: 240px;
+  height: 60px;
+  background: var(--limegreen);
+
+  border-radius: 30px;
+  margin-left: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.bannerbtn::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  top: 38%;
+  right: 15px;
+
+  background: url(../icons/left.png) center / cover no-repeat;
+}
+
+.childtextcontainer {
+  max-width: 400px;
+  height: auto;
+  min-height: 157px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+.leftcontainerchild {
+  flex-direction: column;
+}
+
+.leftcontainerchild h6 {
+  flex-direction: column;
+}
+
+.leftcontainerchild h6 p {
+  margin: 0;
+  margin-top: 2px;
+  color: var(--limegreen);
+}
+
+/* start about us  */
+
+.aboutus {
+  width: 95%;
+  max-width: 1200px;
+
+  height: auto;
+
+  padding: 80px 0px;
+}
+
+.aboutusheader {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+.aboutusengheader {
+  color: var(--limegreen);
+  font-size: 20px;
+}
+
+.aboutustextcontainer {
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.aboutusparagraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.saycontainer {
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+.chatbubble {
+  width: 330px;
+  height: 53px;
+  border-radius: 30px;
+  background: var(--limegreen);
+
+  color: white;
+
+  position: relative;
+
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.chatbubble::before {
+  content: "";
+
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: url("../icons/polygon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutusphotocontainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.aboutusbtn,
+.aboutmyanmarbtn,
+.accordionbtn {
+  background: var(--btncolor);
+  width: 320px;
+  height: 60px;
+
+  border-radius: 30px;
+
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  margin-top: 80px;
+
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+
+  position: relative;
+}
+
+.aboutusbtn::before,
+.aboutmyanmarbtn::before,
+.accordionbtn::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  top: 38%;
+  right: 20px;
+
+  background: url(../icons/left.png) center / cover no-repeat;
+}
+
+/* end about us  */
+
+/* start about myanmar  */
+
+.aboutmyanmar {
+  width: 100%;
+  background-color: var(--bannerbgcolor);
+}
+
+.aboutmyanmarcontainer {
+  max-width: 1200px;
+  height: auto;
+
+  padding: 40px 0px;
+
+  margin: 0 auto;
+  background-color: var(--bannerbgcolor);
+}
+
+.myanmarcontainer {
+  width: 70%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 50px 0px;
+}
+
+.paragraphcontainer {
+  text-align: start;
+}
+
+.myanmarparagraph {
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+h2.aboutmyanmarengheader {
+  color: var(--limegreen);
+  margin: 0;
+}
+
+.aboutus_subheader {
+  margin-top: 60px;
+}
+
+.myanmarcontainer {
+  background: url("../img/myanmar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* end about myanmar */
+
+/* start accordion  section */
+
+.accordion {
+  width: 100%;
+}
+
+.accordioncontainer {
+  width: 80%;
+  max-width: 1200px;
+  height: auto;
+
+  padding: 20px 0px;
+  margin: 150px auto;
+}
+
+.mainheader {
+  margin-top: 160px;
+  margin-bottom: 18px;
+}
+
+.subheader {
+  margin-bottom: 60px;
+}
+
+.mainheader,
+.subheader {
+  margin: 0;
+  font-weight: 0;
+}
+
+.subheader {
+  color: var(--limegreen);
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.text-primary {
+  color: var(--text-color);
+}
+
+.accordion {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-bottom: 30px;
+}
+
+.accordion-header {
+  cursor: pointer;
+}
+
+.accordion-header,
+.accordion-content {
+  max-width: 1400px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+}
+
+.accordion-content {
+  width: 100%;
+  max-width: 1400px;
+  height: 0;
+  display: none;
+  transition: all 1s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.headertext h3 {
+  font-weight: 600;
+}
+
+.headertext {
+  height: auto;
+  min-height: 80px;
+  padding-left: 30px;
+  padding-right: 80px;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-weight: 500 !important;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  border-radius: 10px;
+
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.headertext::before {
+  content: "";
+
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  transform: translateX(-50%);
+
+  background: url("../icons/+.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.4s linear;
+}
+
+.headertext.newicon::before {
+  content: "";
+
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  transform: translateX(-50%);
+
+  background: url("../icons/-.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.4s linear;
+}
+
+.contenttext {
+  min-height: 80px;
+  height: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  border-radius: 10px;
+
+  background-color: var(--bg-color);
+}
+
+.accordion-header,
+.accordion-content {
+  max-width: 1400px;
+}
+
+.accordion-content.show {
+  display: grid;
+  height: auto;
+  margin-top: 5px;
+  padding-top: 5px;
+  transition: all 1s ease;
+}
+
+.iconbox {
+  width: 80px;
+  height: 80px;
+
+  background-color: var(--limegreen);
+  position: relative;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 80px;
+  color: white;
+}
+
+.contenticonbox {
+  width: 80px;
+  height: 80px;
+
+  background-color: var(--btncolor);
+  position: relative;
+  border-radius: 5px;
+
+  text-align: center;
+  line-height: 80px;
+  color: white;
+}
+
+.btncontainer {
+  width: 400px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 400px;
+
+  height: 80px;
+  background-color: var(--btncolor);
+  border-radius: 40px;
+  display: block;
+  font-size: 20px;
+
+  text-align: center;
+  line-height: 80px;
+  color: white;
+  margin-top: 30px;
+  position: relative;
+}
+
+.btn::before {
+  content: "";
+
+  font-size: 15px;
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  top: 50%;
+  right: 20px;
+
+  transform: translateY(-50%);
+
+  background: url("../icons/left.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end accordion section  */
+
+/* start footer section  */
+
+.pagetop {
+  width: 60px;
+  height: 60px;
+
+  background: var(--btncolor);
+
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+.floatbutton {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.floatbutton.pos {
+  position: relative;
+}
+
+.floatbutton.pos .pagetop {
+  position: absolute;
+
+  right: 20px;
+}
+
+footer {
+  width: 100%;
+  background: var(--btncolor);
+  color: #fff;
+  padding: 70px 0px;
+}
+
+.copyrighttext {
+  text-align: center;
+}
+/* end footer section  */
+
+@media screen and (max-width: 1100px) {
+  .nav-link {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .brandtext {
+    font-size: 16px;
+  }
+
+  .brandlink img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .brandbtn {
+    width: 120px;
+    height: 40px;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .bannerbtn {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .customnavbar {
+    padding: 0px 20px;
+  }
+  .nav-link {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .brandtext {
+    font-size: 16px;
+  }
+
+  .brandlink img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .brandbtn {
+    width: 120px;
+    height: 40px;
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  .childtextcontainer h2 {
+    font-size: 30px;
+  }
+
+  /* accordion section  */
+
+  .mainheader {
+    margin-top: 90px;
+    margin-bottom: 18px;
+  }
+
+  .subheader {
+    margin-bottom: 30px;
+  }
+
+  .accordion {
+    margin-bottom: 15px;
+  }
+  .accordion-header,
+  .accordion-content {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .accordion-content.show {
+    margin-top: 0px;
+  }
+
+  .headertext::before,
+  .headertext.newicon::before {
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 0px;
+  }
+
+  .headertext {
+    min-height: 60px;
+    padding-left: 15px;
+    padding-right: 50px;
+  }
+  .contenttext {
+    min-height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .iconbox,
+  .contenticonbox {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .btncontainer,
+  .btn {
+    width: 300px;
+    height: 60px;
+  }
+
+  .btn::before {
+    right: 20px;
+  }
+
+  /* end accordion section  */
+}
+
+@media screen and (max-width: 926px) {
+  .customnavbar {
+    background: transparent;
+    top: 0;
+    width: 95%;
+  }
+
+  .brandtext {
+    font-size: 20px;
+  }
+
+  .customnavbar.bgchange {
+    background: white;
+  }
+  .navbartogellericon {
+    width: 60px;
+    height: 60px;
+    background: var(--darkgreen);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .lines {
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    margin: 4px 0px;
+
+    transition: all 0.3s ease;
+  }
+
+  .navbartogellericon.show .lineone {
+    transform: translateY(9px) rotate(45deg);
+    transition: all 0.3s ease;
+  }
+
+  .navbartogellericon.show .linetwo {
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbartogellericon.show .linethree {
+    transform: translateY(-1px) rotate(-45deg);
+    transition: all 0.3s ease;
+  }
+
+  .icontext {
+    color: white;
+    margin-top: 5px;
+  }
+
+  .navbartogellericon.show .icontext {
+    margin-top: 10px;
+  }
+
+  .menuitems {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0%;
+    overflow: scroll;
+    display: none;
+    transition: all 0.5s ease;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .menuitems.show {
+    display: block;
+
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+
+  .nav-group {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .navlinktext {
+    color: var(--limegreen);
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 25px 0px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .brandbtn {
+    width: 280px;
+    height: 40px;
+    border-radius: 50px;
+    display: block;
+    font-size: 16px;
+    background: var(--limegreen);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    position: relative;
+  }
+
+  .brandbtn::before {
+    content: "";
+
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: 40%;
+    right: 20px;
+
+    background: url(../icons/left.png) center / cover no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customnavbar {
+    background: transparent;
+    top: 0;
+  }
+
+  .brandtext {
+    font-size: 16px;
+  }
+
+  .customnavbar.bgchange {
+    background: white;
+  }
+  .navbartogellericon {
+    width: 60px;
+    height: 60px;
+    background: var(--darkgreen);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .navlinktext {
+    display: block;
+  }
+
+  .lines {
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    margin: 4px 0px;
+
+    transition: all 0.3s ease;
+  }
+
+  .navbartogellericon.show .lineone {
+    transform: translateY(9px) rotate(45deg);
+    transition: all 0.3s ease;
+  }
+
+  .navbartogellericon.show .linetwo {
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbartogellericon.show .linethree {
+    transform: translateY(-1px) rotate(-45deg);
+    transition: all 0.3s ease;
+  }
+
+  .icontext {
+    color: white;
+    margin-top: 5px;
+  }
+
+  .navbartogellericon.show .icontext {
+    margin-top: 10px;
+  }
+
+  .menuitems {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0%;
+    overflow: scroll;
+    display: none;
+    transition: all 0.5s ease;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .menuitems.show {
+    display: block;
+
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+
+  .nav-group {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .navlinktext {
+    color: var(--limegreen);
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 0px;
+  }
+
+  .nav-link {
+    font-size: 24px;
+  }
+
+  .brandbtn {
+    width: 280px;
+    height: 40px;
+    border-radius: 50px;
+    display: block;
+    font-size: 16px;
+    background: var(--limegreen);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    position: relative;
+  }
+
+  .brandbtn::before {
+    content: "";
+
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: 40%;
+    right: 20px;
+
+    background: url(../icons/left.png) center / cover no-repeat;
+  }
+
+  .bannerbtn {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .bannerphotocontainer {
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .bannerphoto {
+    bottom: -266px;
+    left: 0;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .myanmarcontainer {
+    width: 95%;
+  }
+
+  .myanmarparagraph {
+    line-height: 1.7;
+    font-size: 14px;
+  }
+
+  .aboutustextcontainer {
+    width: 85%;
+  }
+
+  .floatcontainer {
+    display: flex;
+    flex-direction: column;
+    bottom: -260px;
+    padding: 30px 0px;
+  }
+
+  .left-news {
+    margin: 0 auto;
+  }
+
+  .leftcontainer {
+    border: 0;
+  }
+
+  .rightcontainer {
+    border-bottom: 1px dotted #000;
+    width: 90%;
+  }
+
+  .textcontainer {
+    width: 95%;
+  }
+
+  .child {
+    width: 100%;
+  }
+
+  .childtextcontainer {
+    width: 95%;
+  }
+
+  .datelink {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .datelinktext {
+    width: 80px;
+    height: 20px;
+    background: var(--btncolor);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 30px;
+    border-radius: 5px;
+  }
+
+  .dateandtext {
+    flex-direction: column;
+    align-items: start;
+    margin: 15px 0px;
+  }
+
+  .floatbtncontainer.sp {
+    display: flex;
+    justify-content: end;
+  }
+
+  .link {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .floatlink {
+    width: 40px;
+    height: 40px;
+  }
+
+  .aboutus {
+    min-height: 100vh;
+  }
+
+  .aboutusheader {
+    margin-top: 300px;
+  }
+
+  .aboutmyanmarcontainer {
+    min-height: 100vh;
+    padding: 40px 0px;
+  }
+  /* accordion section  */
+
+  .mainheader {
+    margin-top: 80px;
+    margin-bottom: 18px;
+  }
+
+  .subheader {
+    margin-bottom: 30px;
+  }
+
+  .accordioncontainer {
+    width: 97%;
+    min-height: 100vh;
+
+    margin: 100px auto;
+    margin-top: 0px;
+  }
+  .accordion {
+    margin-bottom: 15px;
+  }
+  .accordion-header,
+  .accordion-content {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .accordion-content.show {
+    margin-top: 0px;
+  }
+
+  .headertext::before,
+  .headertext.newicon::before {
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 0px;
+  }
+
+  .headertext {
+    min-height: 60px;
+    padding-left: 15px;
+    padding-right: 50px;
+  }
+
+  .contenttext {
+    min-height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .iconbox,
+  .contenticonbox {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .btncontainer,
+  .btn {
+    width: 95%;
+    height: 60px;
+  }
+
+  .btn::before {
+    right: 20px;
+  }
+  /* end accordion section  */
+
+  footer {
+    padding: 60px 0px;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .mainheader {
+    margin-top: 50px;
+    margin-bottom: 18px;
+    font-size: 18px !important;
+  }
+
+  .subheader {
+    margin-bottom: 20px;
+    font-size: 16px !important;
+  }
+
+  .accordion {
+    margin-bottom: 10px;
+  }
+  .accordion-header,
+  .accordion-content {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .accordion-content.show {
+    margin-top: 5px;
+  }
+
+  .headertext::before,
+  .headertext.newicon::before {
+    width: 25px;
+    height: 25px;
+    top: 12px;
+    right: 0px;
+  }
+
+  .headertext {
+    min-height: 50px;
+    padding-left: 10px;
+
+    padding-right: 30px;
+  }
+
+  .contenttext {
+    min-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .headertext {
+    font-size: 10px !important;
+  }
+
+  .contenttext {
+    font-size: 8px !important;
+  }
+
+  .iconbox,
+  .contenticonbox {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .btncontainer,
+  .btn {
+    width: 95%;
+    height: 60px;
+  }
+
+  .btn::before {
+    right: 20px;
+  }
+
+  .bannerphotocontainer {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .brandlink img {
+    height: 40px;
+  }
+
+  .brandtext {
+    font-size: 16px;
+  }
+
+  .brandbtn {
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+    background: var(--limegreen);
+  }
+
+  .brandbtn::before {
+    top: 30%;
+  }
+
+  .bannerphotocontainer {
+    width: 100%;
+    margin-top: -70px;
+  }
+
+  /* start aboutus  */
+  .aboutusheader {
+    font-size: 24px;
+  }
+
+  .aboutusengheader {
+    font-size: 14px;
+  }
+
+  .aboutusparagraph {
+    font-size: 14px;
+  }
+
+  .aboutustextcontainer {
+    width: 95%;
+  }
+
+  .chatbubble {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .aboutusphotocontainer {
+    width: 100%;
+  }
+
+  .aboutusbtn,
+  .aboutmyanmarbtn,
+  .accordionbtn {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  /* end aboutus  */
+
+  /* start accordion section  */
+  .mainheader {
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+
+  .subheader {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .accordion {
+    margin-bottom: 10px;
+  }
+  .accordion-header,
+  .accordion-content {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .accordion-content.show {
+    margin-top: 5px;
+  }
+
+  .headertext::before,
+  .headertext.newicon::before {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 0px;
+  }
+
+  .headertext {
+    min-height: 40px;
+
+    padding-left: 5px;
+    padding-right: 30px;
+    border-radius: 5px;
+  }
+
+  .contenttext {
+    min-height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 8px !important;
+    border-radius: 5px;
+  }
+
+  .headertext {
+    font-size: 8px !important;
+  }
+
+  .iconbox,
+  .contenticonbox {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px !important;
+  }
+
+  .btncontainer,
+  .btn {
+    width: 95%;
+    height: 60px;
+  }
+
+  .btn::before {
+    right: 20px;
+  }
+
+  /* end accordion section  */
+}
+
+@media screen and (max-width: 350px) {
+  .brandtext {
+    font-size: 13px;
+  }
+}
