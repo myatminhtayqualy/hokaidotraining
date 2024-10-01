@@ -417,7 +417,7 @@ ul {
   top: 38%;
   right: 15px;
 
-  background: url(../icons/left.png) center / cover no-repeat;
+  background: url(../icons/left.png) center / contain no-repeat;
 }
 
 .childtextcontainer {
@@ -559,7 +559,7 @@ ul {
   top: 38%;
   right: 20px;
 
-  background: url(../icons/left.png) center / cover no-repeat;
+  background: url(../icons/left.png) center / contain no-repeat;
 }
 
 /* end about us  */
@@ -734,8 +734,6 @@ h2.aboutmyanmarengheader {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  transition: all 0.4s linear;
 }
 
 .headertext.newicon::before {
@@ -754,8 +752,6 @@ h2.aboutmyanmarengheader {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  transition: all 0.4s linear;
 }
 
 .contenttext {
@@ -928,7 +924,7 @@ footer {
     width: 120px;
     height: 40px;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .bannerbtn {
@@ -958,7 +954,7 @@ footer {
     width: 120px;
     height: 40px;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 6px;
   }
 
@@ -1061,7 +1057,7 @@ footer {
     width: 28px;
     height: 2px;
     background: #fff;
-    margin: 4px 0px;
+    margin: 3px 0px;
 
     transition: all 0.3s ease;
   }
@@ -1077,13 +1073,13 @@ footer {
   }
 
   .navbartogellericon.show .linethree {
-    transform: translateY(-1px) rotate(-45deg);
+    transform: translateY(1px) rotate(-45deg);
     transition: all 0.3s ease;
   }
 
   .icontext {
     color: white;
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .navbartogellericon.show .icontext {
@@ -1196,7 +1192,7 @@ footer {
     width: 28px;
     height: 2px;
     background: #fff;
-    margin: 4px 0px;
+    margin: 3px 0px;
 
     transition: all 0.3s ease;
   }
@@ -1212,7 +1208,7 @@ footer {
   }
 
   .navbartogellericon.show .linethree {
-    transform: translateY(-1px) rotate(-45deg);
+    transform: translateY(1px) rotate(-45deg);
     transition: all 0.3s ease;
   }
 
@@ -1613,7 +1609,7 @@ footer {
   .aboutusbtn,
   .aboutmyanmarbtn,
   .accordionbtn {
-    width: 95%;
+    width: 345px;
     font-size: 16px;
   }
 
@@ -1695,5 +1691,12 @@ footer {
 @media screen and (max-width: 350px) {
   .brandtext {
     font-size: 13px;
+  }
+
+  .aboutusbtn,
+  .aboutmyanmarbtn,
+  .accordionbtn {
+    width: 95%;
+    font-size: 16px;
   }
 }
