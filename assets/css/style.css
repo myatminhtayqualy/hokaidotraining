@@ -443,6 +443,7 @@ ul {
 /* start about us  */
 
 .aboutuscontainerfluid {
+  width: 100%;
   background-color: white;
 }
 
@@ -567,6 +568,7 @@ ul {
 /* start about myanmar  */
 
 .aboutmyanmarcontainerfluid {
+  width: 100%;
   background-color: var(--bannerbgcolor);
 }
 
@@ -586,7 +588,7 @@ ul {
 }
 
 .myanmarcontainer {
-  width: 70%;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
 
@@ -628,6 +630,7 @@ h2.aboutmyanmarengheader {
 /* start accordion  section */
 
 .accordioncontainerfluid {
+  width: 100%;
   background-color: #fff;
 }
 
@@ -636,7 +639,7 @@ h2.aboutmyanmarengheader {
 }
 
 .accordioncontainer {
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
   height: auto;
 
@@ -943,9 +946,10 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .customnavbar {
-    padding: 0px 2px;
+    padding: 0px 8px;
     /* width: 100%; */
   }
+
   .nav-link {
     font-size: 14px;
     padding: 10px;
@@ -1035,7 +1039,7 @@ footer {
 }
 
 @media screen and (max-width: 926px) {
-  .container {
+  .navbarcontainer {
     padding: 0;
     padding-top: 0px;
   }
@@ -1362,7 +1366,7 @@ footer {
   }
 
   .textcontainer {
-    width: 95%;
+    width: 100%;
   }
 
   .child {
