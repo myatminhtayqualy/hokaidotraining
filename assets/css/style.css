@@ -1035,9 +1035,14 @@ footer {
 }
 
 @media screen and (max-width: 926px) {
+  .container {
+    padding: 0;
+    padding-top: 0px;
+  }
   .customnavbar {
     background: transparent;
     top: 0;
+    padding: 10px;
   }
 
   .brandtext {
@@ -1579,6 +1584,7 @@ footer {
 @media screen and (max-width: 375px) {
   .container {
     padding: 30px 5px;
+    padding-top: 0px;
   }
 
   .customnavbar {
