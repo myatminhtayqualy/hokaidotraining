@@ -694,13 +694,15 @@ h2.aboutmyanmarengheader {
   display: grid;
   grid-template-columns: 80px 1fr;
   font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  transition: all 1s ease;
 }
 
 .accordion-content {
   width: 100%;
   max-width: 1400px;
   height: 0;
-  display: none;
+  display: grid;
+  overflow: hidden;
   transition: all 1s ease;
 }
 
@@ -785,13 +787,7 @@ h2.aboutmyanmarengheader {
   background-color: var(--bg-color);
 }
 
-.accordion-header,
-.accordion-content {
-  max-width: 1400px;
-}
-
 .accordion-content.show {
-  display: grid;
   height: auto;
   margin-top: 5px;
   padding-top: 5px;
@@ -997,6 +993,7 @@ footer {
 
   .accordion-content.show {
     margin-top: 0px;
+    transition: all 1s ease;
   }
 
   .headertext::before,
@@ -1176,6 +1173,14 @@ footer {
     right: 20px;
 
     background: url(../icons/left.png) center / cover no-repeat;
+  }
+
+  .floatcontainer {
+    bottom: -125px;
+  }
+
+  .bannerphoto {
+    bottom: -328px;
   }
 }
 
@@ -1465,6 +1470,7 @@ footer {
 
   .accordion-content.show {
     margin-top: 0px;
+    transition: all 1s ease;
   }
 
   .headertext::before,
@@ -1532,6 +1538,7 @@ footer {
 
   .accordion-content.show {
     margin-top: 5px;
+    transition: all 1s ease;
   }
 
   .headertext::before,
@@ -1676,6 +1683,7 @@ footer {
 
   .accordion-content.show {
     margin-top: 5px;
+    transition: all 1s ease;
   }
 
   .headertext::before,
