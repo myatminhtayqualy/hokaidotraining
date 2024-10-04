@@ -110,6 +110,7 @@ ul.breadcrumb li a:hover {
 
 .contentheader {
   margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 .wpmaincontentbox img {
@@ -144,7 +145,7 @@ ul.breadcrumb li a:hover {
 .wpmaincontentbox h2 {
   background-color: var(--bannerbgcolor);
   font-size: 22px;
-  padding: 14px 30px;
+  padding: 14px 20px;
   margin: 0;
   font-weight: 400;
   border-left: 10px solid var(--btncolor);
@@ -258,6 +259,33 @@ ul.breadcrumb li a:hover {
   margin-left: 20px;
 }
 
+.sidebarcontainer {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  grid-template-areas:
+    "img-container"
+    "search-box"
+    "content-list"
+    "category";
+}
+
+.img-container {
+  grid-area: img-container;
+  height: 500px;
+}
+
+.search-box {
+  grid-area: search-box;
+}
+
+.content-list {
+  grid-area: content-list;
+}
+
+.category {
+  grid-area: category;
+}
+
 @media screen and (max-width: 768px) {
   ul.breadcrumb li {
     display: inline;
@@ -284,5 +312,28 @@ ul.breadcrumb li a:hover {
 
   .maincontainer {
     margin-top: 30px;
+  }
+
+  .wpmaincontentbox h2 {
+    font-size: 16px;
+    padding: 14px 5px;
+  }
+
+  .sidebarcontainer {
+    grid-template-areas:
+      "search-box"
+      "content-list"
+      "category"
+      "img-container";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tableheaderrow {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+
+  .tablechildrow {
+    grid-template-columns: 1fr 1fr 2fr;
   }
 }
