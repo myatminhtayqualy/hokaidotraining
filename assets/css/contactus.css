@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+:root {
+  --darkgreen: #307c4f;
+  --limegreen: #90c31e;
+  --btncolor: #03561e;
+  --bannerbgcolor: #eff8e3;
+  --bg-color: #f5f5f5;
+  --contactus-color: #fc0b05;
+  --checkbox-color: #cbcbcb;
+  --contactusbtn-color: #777777;
+}
+
+.navbarcontainerfluid {
+  background: #fff;
+}
+
+/* Start Contact Us  */
+.contactuscontainerfluid {
+  width: 100%;
+  background: #fff;
+}
+
+.contactuscontainer {
+  max-width: 1400px;
+  /* margin: 0 auto; */
+  padding: 50px 10px;
+}
+
+.contactusheader {
+  font-size: 32px;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactustext {
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contactustextcontainer {
+  max-width: 1140px;
+  min-height: 57px;
+  margin-top: 60px;
+}
+
+.contactustextcontainer p {
+  margin-top: 0;
+  padding: 0;
+}
+
+.contactusmaintext {
+  margin-bottom: 55px;
+}
+
+.contactusspan {
+  color: var(--contactus-color);
+}
+
+.contactrow {
+  display: grid;
+  grid-template-columns: 345px 1fr;
+  margin: 25px 0px;
+}
+
+.contactdetailschild {
+  margin-right: 130px;
+}
+
+.checkboxtext {
+  margin: 0;
+  margin-left: 15px;
+}
+
+/* Base styling for the checkbox */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 15px;
+}
+
+/* Checked state: background and checkmark color */
+input[type="checkbox"]:checked {
+  background-color: #cbcbcb;
+  border-color: #cbcbcb;
+}
+
+/* Add checkmark when checked */
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.underlinediv {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}
+
+.customCheckbox {
+  margin-top: 24px;
+}
+
+.contactusbtn {
+  width: 100%;
+  max-width: 400px;
+  height: 80px;
+
+  display: block;
+
+  background-color: var(--btncolor);
+
+  border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.contactusbtn.one {
+  margin-top: 60px;
+}
+
+.contactusbtn.two {
+  background-color: var(--contactusbtn-color);
+}
+
+.contactusbtn::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  top: 38%;
+  right: 25px;
+
+  background: url(../icons/left.png) center / contain no-repeat;
+}
+/* End Contact Us  */
+
+@media screen and (max-width: 768px) {
+  .contactusheader {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .contactustext {
+    font-size: 14px;
+  }
+  .contactrow {
+    grid-template-columns: 1fr;
+  }
+
+  .contactdetails {
+    margin: 20px;
+  }
+
+  .contactdetailschild {
+    margin-right: 20px;
+  }
+
+  .contactusbtn {
+    max-width: 345px;
+    height: 60px;
+  }
+}

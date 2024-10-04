@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+:root {
+  --darkgreen: #307c4f;
+  --limegreen: #90c31e;
+  --btncolor: #03561e;
+  --bannerbgcolor: #eff8e3;
+  --bg-color: #f5f5f5;
+}
+
+.navbarcontainerfluid {
+  background-color: white;
+}
+
+.noticecontainerfluid {
+  width: 100%;
+  background-color: white;
+}
+
+.noticecontainer {
+  max-width: 1400px;
+  padding: 0px 10px;
+  margin: 0 auto;
+  /* background-color: blue; */
+}
+
+ul.breadcrumb {
+  padding: 10px 5px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "\003E";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.maincontainer {
+  width: 100%;
+  margin-top: 90px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 60px;
+}
+
+.contentrow {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 50px;
+  margin: 15px 0px;
+}
+
+.contentpbox {
+  width: 100px;
+  height: 26px;
+  background: var(--btncolor);
+  color: white;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentspan {
+  padding: 5px;
+}
+
+.contentlink {
+  color: var(--btncolor);
+}
+
+.contentlinkbox {
+  width: 100px;
+  height: 26px;
+  background: #f5f5f5;
+  color: black;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contentheader {
+  margin-bottom: 30px;
+}
+
+.wpmaincontentbox img {
+  width: 100%;
+
+  height: 100%;
+  margin-top: 30px;
+  margin: 0 auto;
+}
+
+.wpmaincontentbox ol {
+  display: block;
+  background-color: #f5f5f5;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.wpmaincontentbox ol li {
+  margin: 10px 0px;
+  color: var(--btncolor);
+}
+
+.wpmaincontentbox p {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+.wpmaincontentbox h2 {
+  background-color: var(--bannerbgcolor);
+  font-size: 22px;
+  padding: 14px 30px;
+  margin: 0;
+  font-weight: 400;
+  border-left: 10px solid var(--btncolor);
+}
+
+.wpmaincontentbox span {
+  color: var(--btncolor);
+  font-weight: 700;
+}
+
+.wpmaincontentbox h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tablebox {
+  margin-bottom: 60px;
+}
+
+.tableheaderrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  place-items: center;
+  gap: 3px;
+
+  color: white;
+  /* margin: 10px 0px; */
+}
+
+.tablechildrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  place-items: center;
+  gap: 3px;
+  color: black;
+}
+
+.tableheader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  background: var(--btncolor);
+  border: 1px solid gray;
+}
+
+.tablechild {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  border: 1px solid gray;
+}
+
+.hrline {
+  width: 100%;
+  height: 3px;
+  background: var(--bannerbgcolor);
+  margin-bottom: 30px;
+}
+
+.carouselcontrolbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carouseliconbox {
+  width: 40px;
+  height: 40px;
+
+  background: var(--btncolor);
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.carouseliconbox::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+
+  background: url("../icons/rigth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carouseliconbox.right::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../icons/left2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.carouseliconbox.left {
+  margin-right: 20px;
+}
+
+.carouseliconbox.right {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+  }
+
+  ul.breadcrumb li + li:before {
+    padding: 2px;
+    color: black;
+    content: "\003E";
+  }
+
+  .maincontainer {
+    grid-template-columns: 1fr;
+  }
+
+  .contentlinkbox {
+    display: none;
+  }
+
+  .contentlinkbox.first {
+    display: flex;
+  }
+
+  .maincontainer {
+    margin-top: 30px;
+  }
+}
