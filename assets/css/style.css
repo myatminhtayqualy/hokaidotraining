@@ -152,7 +152,6 @@ a {
 .customnavbar {
   background: #ffffff;
 
-
   max-width: 1700px;
 
   height: 80px;
@@ -990,7 +989,6 @@ footer {
 
 /* end footer section  */
 
-
 /* news page start */
 .news-mv {
   padding-top: 30px;
@@ -1021,7 +1019,7 @@ footer {
   color: #000000;
   position: relative;
 }
-.page-name span a::before{
+.page-name span a::before {
   content: "";
   background: url(../img/Component.png) no-repeat center/contain;
   width: 10px;
@@ -1240,14 +1238,14 @@ footer {
 }
 
 /* About Page start */
-.sec-about{
+.sec-about {
   padding-top: 120px;
   padding-bottom: 160px;
   width: 100%;
   margin: 0 auto;
   font-family: "Noto Sans JP";
 }
-.sec-about .container .about-txt{
+.sec-about .container .about-txt {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
@@ -1255,69 +1253,69 @@ footer {
   text-align: center;
   margin-bottom: 90px;
 }
-.sec-about .container .chatbubble{
+.sec-about .container .chatbubble {
   font-size: 20px;
   margin-bottom: 40px;
 }
-.sec-about .container .hiraginokaku{
-font-family: "Noto Sans JP";
+.sec-about .container .hiraginokaku {
+  font-family: "Noto Sans JP";
 }
-.sec-about .container .description{
+.sec-about .container .description {
   font-size: 22px;
   font-weight: 600;
   color: #000000;
   text-align: center;
   margin-bottom: 50px;
 }
-.sec-about .container img{
+.sec-about .container img {
   /* display: block; */
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
   max-width: 100%;
 }
-.sec-about .container .information{
+.sec-about .container .information {
   font-size: 32px;
   font-weight: 600;
-  color: #03561E;
+  color: #03561e;
   text-align: center;
   padding-top: 90px;
   padding-bottom: 10px;
 }
-.sec-about .container .information-jp{
+.sec-about .container .information-jp {
   font-size: 20px;
   font-weight: 700;
-  color: #90C31E;
+  color: #90c31e;
   text-align: center;
   padding-bottom: 60px;
 }
-.information-blk{
+.information-blk {
   display: grid;
   gap: 5px;
   grid-template-columns: 300px 1fr;
   margin-bottom: 7px;
 }
-.information-blk .name{
+.information-blk .name {
   max-width: 300px;
   padding-top: 35px;
   padding-bottom: 35px;
   padding-left: 100px;
   text-align: center;
   padding-right: 100px;
-  background-color: #03561E;
+  background-color: #03561e;
   font-size: 22px;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
 }
-.information-blk .name-description{
+.information-blk .name-description {
   /* width: calc((100% - 305px)); */
-padding: 35px 0 35px 65px;
-  background-color: #F5F5F5;
+  padding: 35px 0 35px 65px;
+  background-color: #f5f5f5;
   border-radius: 10px;
   font-size: 22px;
   color: #000000;
   font-weight: 400;
-
+}
 @media screen and (max-width: 1200px) {
   .floatcontainer {
     bottom: -150px;
@@ -1326,7 +1324,6 @@ padding: 35px 0 35px 65px;
   .bannerphoto {
     bottom: -357px;
   }
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -2016,64 +2013,62 @@ padding: 35px 0 35px 65px;
   .sec-about {
     padding-top: 60px;
     padding-bottom: 145px;
-}
-.sec-about .container .about-txt {
-  font-size: 14px;
-  line-height: 1.7;
-  margin-bottom: 80px;
-}
-.sec-about .container .chatbubble {
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-.sec-about .container .description {
-  font-size: 16px;
-  margin-bottom: 60px;
-}
-.sec-about .container .information {
-  font-size: 20px;
-  padding-top: 55px;
-  padding-bottom: 10px;
-}
-.sec-about .container .information-jp {
-  font-size: 14px;
-  font-weight: 700;
-  padding-bottom: 30px;
-}
-.information-blk .name {
-  max-width: 60px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 100px;
-  text-align: center;
-  padding-right: 100px;
-  background-color: #03561E;
-  font-size: 22px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  font-weight: 600;
-}
-.information-blk .name {
-  max-width: 60px;
-  padding: 0 0 0 10px;
-  background-color: #03561E;
-  font-size: 14px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-.information-blk {
-  grid-template-columns: 60px 1fr;
-  margin-bottom: 7px;
-}
-.information-blk .name-description {
-  padding: 35px 0 35px 20px;
-  background-color: #F5F5F5;
-  border-radius: 14px;
-  font-size: 22px;
-}
-
-
+  }
+  .sec-about .container .about-txt {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 80px;
+  }
+  .sec-about .container .chatbubble {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .sec-about .container .description {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .sec-about .container .information {
+    font-size: 20px;
+    padding-top: 55px;
+    padding-bottom: 10px;
+  }
+  .sec-about .container .information-jp {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+  .information-blk .name {
+    max-width: 60px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 100px;
+    text-align: center;
+    padding-right: 100px;
+    background-color: #03561e;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .information-blk .name {
+    max-width: 60px;
+    padding: 0 0 0 10px;
+    background-color: #03561e;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .information-blk {
+    grid-template-columns: 60px 1fr;
+    margin-bottom: 7px;
+  }
+  .information-blk .name-description {
+    padding: 35px 0 35px 20px;
+    background-color: #f5f5f5;
+    border-radius: 14px;
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 482px) {
