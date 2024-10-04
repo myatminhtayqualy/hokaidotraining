@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>ページタイトル</title>
+      <meta name="description" content="ページの説明" />
+      <meta name="format-detection" content="telephone=no" />
+      <!-- favicon/webclipicon -->
+      <!-- <link rel="icon" href="favicon.ico" />
+         <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+         <link rel="apple-touch-icon" href="webclip.png" /> -->
+      <!-- ogp -->
+      <meta property="og:site_name" content="サイト名" />
+      <meta property="og:url" content="URL" />
+      <meta property="og:type" content="website or article" />
+      <meta property="og:title" content="ページのタイトル" />
+      <meta property="og:description" content="ページの説明" />
+      <meta property="og:image" content="URL" />
+      <meta property="og:locale" content="ja_JP" />
+      <!-- <meta property="fb:app_id" content="AppID"> -->
+      <meta name="twitter:card" content="summary_large_image or summary" />
+      <!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
+      <meta name="twitter:description" content="ページの説明" />
+      <meta name="twitter:image:src" content="URL" />
+      <!-- fonts -->
+      <!-- noto sans jp  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+         rel="stylesheet"
+         />
+      <!-- noto sans  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"
+         />
+      <!-- poppin  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet"
+         />
+      <!-- tsukumi rounded  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+         />
+      <!-- noto serif  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"
+         />
+      <!-- lato font  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+         rel="stylesheet"
+         />
+      <!-- font awesome  -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <!-- font  Hiragino Kaku Gothic -->
+      <script>
+         (function (d) {
+           var config = {
+               kitId: "okm2nqr",
+               scriptTimeout: 3000,
+               async: true,
+             },
+             h = d.documentElement,
+             t = setTimeout(function () {
+               h.className =
+                 h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+             }, config.scriptTimeout),
+             tk = d.createElement("script"),
+             f = false,
+             s = d.getElementsByTagName("script")[0],
+             a;
+           h.className += " wf-loading";
+           tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+           tk.async = true;
+           tk.onload = tk.onreadystatechange = function () {
+             a = this.readyState;
+             if (f || (a && a != "complete" && a != "loaded")) return;
+             f = true;
+             clearTimeout(t);
+             try {
+               Typekit.load(config);
+             } catch (e) {}
+           };
+           s.parentNode.insertBefore(tk, s);
+         })(document);
+      </script>
+      <!-- css -->
+      <base href="./assets/" />
+      <link rel="stylesheet" href="css/import.css" />
+      <link rel="stylesheet" href="css/contactus.css">
+      <!-- js -->
+      <!-- Alpine -->
+      <script
+         defer
+         src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+         ></script>
+      <script src="js/jquery-3.7.1.min.js" defer></script>
+      <script src="js/common.js" defer></script>
+   </head>
+   <body>
+      
+      <div class="container-fluid navbarcontainerfluid">
+         
+         <div class="container navbarcontainer">
+            <!-- start navbar  -->
+            <header class="customnavbar">
+               <h1 class="brand">
+                  <a href="/" class="brandlink">
+                     <img src="./img/logo.png" alt="hokaidologo" />
+                     <p class="hiraginokaku brandtext">北海道福祉介護事業協同組合</p>
+                  </a>
+               </h1>
+               <div class="navbartogellericon sp">
+                  <div class="lines lineone"></div>
+                  <div class="lines linetwo"></div>
+                  <div class="lines linethree"></div>
+                  <div class="icontext lato fz-10-sp">MENU</div>
+               </div>
+               <div class="displaycenter menuitems">
+                  <ul class="nav-group">
+                     <li class="nav-item">
+                        <a href="/hokaidotraining/#news" class="nav-link hiraginokaku active">お知らせ</a>
+                        <p class="lato-bold fz-14-sp sp navlinktext">News</p>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/hokaidotraining/#about" class="nav-link hiraginokaku">組合について</a>
+                        <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/hokaidotraining/#myanmar" class="nav-link hiraginokaku"
+                           >ミャンマーについて</a
+                           >
+                        <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/hokaidotraining/#question" class="nav-link hiraginokaku">よくある質問</a>
+                        <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/" class="nav-link brandbtn hiraginokaku">お問い合わせ</a>
+                     </li>
+                  </ul>
+               </div>
+            </header>
+            <!-- end navbar -->
+
+     
+
+         </div>
+     
+      </div> 
+
+      <div class="container-fluid contactuscontainerfluid">
+            <div class="container contactuscontainer">
+                 <h2 class="contactusheader notosanjp">お問い合わせ</h2>
+                 <p class="contactustext lato-bold text-limegreen fz-20 fz-14-sp">Contact</p>
+
+                 <div class="contactustextcontainer">
+                  <p class="notosanjp fz-14-sp fz-16 fw-300">入力内容にお間違いがないか確認の上、「送信する」ボタンを押してください。
+                     </p>
+
+                  <p class="contactusmaintext notosanjp fz-14-sp fz-16 fw-300">再度ご入力される場合は「前の画面に戻る」ボタンを押してください。</p>
+
+                  <div class="contactrow">
+                      <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        氏名  <span class="contactusspan">※</span>
+                      </div>
+
+                      <div class="contactdetails d-flex">
+                        <p class="contactdetailschild notosanjp fz-14-sp fz-16 fw-300">姓姓</p>
+                        <p class="notosanjp fz-14-sp fz-16 fw-300">名名</p>
+                      </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        氏名（フリガナ）  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex">
+                       <p class="contactdetailschild notosanjp fz-14-sp fz-16 fw-300">セイセイ</p>
+                       <p class="notosanjp fz-14-sp fz-16 fw-300">メイメイ</p>
+                     </div>
+                 </div>
+
+                 <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        メールアドレス  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex notosanjp fz-14-sp fz-16 fw-300">
+                     <p>hfkca@example.com</p>
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        メールアドレス（確認用）  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex notosanjp fz-14-sp fz-16 fw-300">
+                     <p>hfkca@example.com</p>
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        会社名  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex">
+                     <p class="notosanjp fz-14-sp fz-16 fw-300">XXXX株式会社</p>
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        所属部署 
+                     </div>
+
+                     <div class="contactdetails d-flex notosanjp fz-14-sp fz-16 fw-300">
+                     <p>所属部署</p>
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        お役職 
+                     </div>
+
+                     <div class="contactdetails d-flex notosanjp fz-14-sp fz-16 fw-300">
+                     <p>お役職</p>
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        住所  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex notosanjp fz-14-sp fz-16 fw-300">
+                     <p>北海道XX市XXXX</p>
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles">
+                        電話番号  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex">
+                     <p>000-0000-0000</p>
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        お問い合わせ種別（複数選択可）  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex notosanjp fz-14-sp fz-16 fw-300">
+                        <input type="checkbox" id="customCheckbox" checked>
+                        <label for="customCheckbox">介護技能実習生を受け入れたい</label>
+                   
+                 
+                     </div>
+                  </div>
+
+                  <div class="contactrow">
+                     <div class="contactdetailtitles notosanjp fz-14-sp fz-16 fw-300">
+                        お問い合わせ内容  <span class="contactusspan">※</span>
+                     </div>
+
+                     <div class="contactdetails d-flex notosanjp fz-14-sp fz-16 fw-300">
+                     <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト </p>
+                 
+                     </div>
+                  </div>
+
+                  
+
+
+               </div>
+
+               <div class="text-center notosanjp fz-14-sp fz-16 fw-300">
+                  <div class="underlinediv">「個人情報保護方針」</div>
+                  をご確認の上、同意される場合は下記のチェックボックスを選択してください。
+               </div>
+
+               <div class="text-center mt25">
+                  <input type="checkbox" id="customCheckbox2" checked>
+                  <label for="customCheckbox2">同意する</label>
+               </div>
+
+
+               <a href="" class="contactusbtn one fw-700 fz-20 fz-16-sp notosanjp">送信する</a>
+
+               <a href="" class="contactusbtn two fw-700 fw-20 fz-20-16 notosanjp">前の画面に戻る</a>
+            
+            </div>
+
+
+          
+      </div>
+
+      
+
+         
+
+        
+            
+       
+
+            <div class="floatbutton displaycenter">
+               <div class="pagetop displaycenter">
+                  <img src="./icons/top.png" alt="scrolltop" />
+               </div>
+            </div>
+            
+         
+
+         <footer id="footer-main">
+            <p class="copyrighttext lato-bold fz-14">
+               &copy;北海道福祉介護事業協同組合
+            </p>
+         </footer>
+      
+   </body>
+</html>
