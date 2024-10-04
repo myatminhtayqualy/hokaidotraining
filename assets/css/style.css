@@ -23,6 +23,10 @@ body {
   font-family: "hiragino-kaku-gothic-pron", sans-serif;
 }
 
+ul li {
+  list-style: none;
+}
+
 body.noscroll {
   overflow: hidden;
 }
@@ -78,6 +82,10 @@ body.noscroll {
 
 .hiraginokaku {
   font-family: "hiragino-kaku-gothic-pron", sans-serif;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -152,7 +160,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  box-shadow: 0px 3px 20px #707070;
   padding: 0px 30px;
   border-radius: 10px;
   z-index: 100;
@@ -416,7 +424,8 @@ ul {
   width: 110%;
   height: 100%;
 
-  position: absolute; /* Allows overlapping */
+  position: absolute;
+  /* Allows overlapping */
   top: 0;
   left: 0;
   background: url(../img/bannermap.png);
@@ -561,6 +570,7 @@ ul {
 
   margin-bottom: 40px;
   font-size: 18px;
+  margin: 0 auto;
 }
 
 .chatbubble::before {
@@ -931,6 +941,7 @@ h2.aboutmyanmarengheader {
   justify-content: center;
   align-items: center;
 }
+
 /* end accordion section  */
 
 /* start footer section  */
@@ -974,6 +985,7 @@ footer {
 .copyrighttext {
   text-align: center;
 }
+
 /* end footer section  */
 
 @media screen and (max-width: 1200px) {
@@ -1064,6 +1076,7 @@ footer {
   .accordion {
     margin-bottom: 15px;
   }
+
   .accordion-header,
   .accordion-content {
     grid-template-columns: 60px 1fr;
@@ -1087,6 +1100,7 @@ footer {
     padding-left: 15px;
     padding-right: 50px;
   }
+
   .contenttext {
     padding-left: 15px;
     padding-right: 15px;
@@ -1119,6 +1133,7 @@ footer {
     padding: 0;
     padding-top: 0px;
   }
+
   .customnavbar {
     background: transparent;
     top: 0;
@@ -1132,6 +1147,7 @@ footer {
   .customnavbar.bgchange {
     background: white;
   }
+
   .navbartogellericon {
     width: 60px;
     height: 60px;
@@ -1228,10 +1244,10 @@ footer {
   .brandbtn {
     width: 280px;
     height: 40px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     display: block;
     font-size: 16px;
-    background: var(--limegreen);
+    /* background: var(--limegreen); */
 
     display: flex;
     justify-content: center;
@@ -1283,6 +1299,7 @@ footer {
   .customnavbar.bgchange {
     background: white;
   }
+
   .navbartogellericon {
     width: 60px;
     height: 60px;
@@ -1515,6 +1532,7 @@ footer {
     max-width: 345px;
     font-size: 16px;
   }
+
   /* accordion section  */
 
   .mainheader {
@@ -1532,9 +1550,11 @@ footer {
     margin: 100px auto;
     margin-top: 0px;
   }
+
   .accordion {
     margin-bottom: 15px;
   }
+
   .accordion-header,
   .accordion-content {
     grid-template-columns: 60px 1fr;
@@ -1577,11 +1597,152 @@ footer {
   .btn::before {
     right: 20px;
   }
+
   /* end accordion section  */
 
   footer {
     padding: 60px 0px;
   }
+
+  .notice-blk {
+    display: block;
+  }
+
+  .sec-notice .right-blk {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .advertisment {
+    margin: 0 auto;
+  }
+
+  .sec-notice {
+    padding-bottom: 138px;
+    padding-top: 60px;
+  }
+
+  .page-name {
+    font-size: 12px;
+  }
+
+  .news-mv .second-container .news-heading {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .news-mv {
+    padding-top: 0;
+    /* padding-bottom: 160px; */
+  }
+
+  .news-mv .second-container .mean {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "lato";
+    color: #307c4f;
+    margin-top: 12px;
+  }
+
+  .date-blk .date {
+    font-size: 14px;
+  }
+
+  .date-blk .notice {
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    padding: 4px 0;
+  }
+
+  .sec-notice .date-blk {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 17px;
+    margin-top: 30px;
+  }
+
+  .sec-notice .notice-blk .txt {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+
+  .pignation {
+    padding-top: 33px;
+    gap: 40px;
+  }
+
+  .tag .tag-blk .tag-name {
+    font-size: 12px;
+  }
+  .sec-about {
+    padding-top: 60px;
+    padding-bottom: 145px;
+}
+.sec-about .container .about-txt {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 80px;
+}
+.sec-about .container .chatbubble {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.sec-about .container .description {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.sec-about .container .information {
+  font-size: 20px;
+  padding-top: 55px;
+  padding-bottom: 10px;
+}
+.sec-about .container .information-jp {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.information-blk .name {
+  max-width: 60px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 100px;
+  text-align: center;
+  padding-right: 100px;
+  background-color: #03561E;
+  font-size: 22px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.information-blk .name {
+  max-width: 60px;
+  padding: 0 0 0 10px;
+  background-color: #03561E;
+  font-size: 14px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.information-blk {
+  grid-template-columns: 60px 1fr;
+  margin-bottom: 7px;
+}
+.information-blk .name-description {
+  padding: 35px 0 35px 20px;
+  background-color: #F5F5F5;
+  border-radius: 14px;
+  font-size: 22px;
+}
+
+
 }
 
 @media screen and (max-width: 482px) {
@@ -1599,6 +1760,7 @@ footer {
   .accordion {
     margin-bottom: 10px;
   }
+
   .accordion-header,
   .accordion-content {
     grid-template-columns: 50px 1fr;
@@ -1665,6 +1827,7 @@ footer {
   .customnavbar {
     padding: 0;
   }
+
   .brandlink img {
     height: 40px;
   }
@@ -1740,6 +1903,7 @@ footer {
   .accordion {
     margin-bottom: 10px;
   }
+
   .accordion-header,
   .accordion-content {
     grid-template-columns: 40px 1fr;
