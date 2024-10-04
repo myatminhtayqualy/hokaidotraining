@@ -267,15 +267,49 @@ ul.breadcrumb li a:hover {
     "search-box"
     "content-list"
     "category";
+  height: max-content;
 }
 
 .img-container {
   grid-area: img-container;
-  height: 500px;
+  /* height: 500px; */
+}
+
+.img-container img {
+  width: 100%;
 }
 
 .search-box {
+  width: 100%;
+  display: block;
   grid-area: search-box;
+  margin-top: 60px;
+}
+
+.form-group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  border: 1px solid #e6e6e6;
+}
+
+.form-group label {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bannerbgcolor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
+
+.searchinput {
+  padding: 5px;
+  padding-left: 20px;
+  outline: none;
+  border: none;
 }
 
 .content-list {
