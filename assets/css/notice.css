@@ -265,8 +265,8 @@ ul.breadcrumb li a:hover {
   grid-template-areas:
     "img-container"
     "search-box"
-    "content-list"
-    "category";
+    "category-list"
+    "tags";
   height: max-content;
 }
 
@@ -288,12 +288,12 @@ ul.breadcrumb li a:hover {
 
 .form-group {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 40px;
   border: 1px solid #e6e6e6;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.form-group label {
+.submitbtn {
   width: 40px;
   height: 40px;
   background-color: var(--bannerbgcolor);
@@ -303,6 +303,14 @@ ul.breadcrumb li a:hover {
   align-items: center;
 
   border-radius: 5px;
+  border: none;
+}
+
+.searchform {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  place-items: center;
 }
 
 .searchinput {
@@ -312,12 +320,25 @@ ul.breadcrumb li a:hover {
   border: none;
 }
 
-.content-list {
-  grid-area: content-list;
+.category-list {
+  grid-area: category-list;
 }
 
-.category {
-  grid-area: category;
+.tags {
+  grid-area: tags;
+}
+
+.categoryheader {
+  color: var(--btncolor);
+  margin: 0px;
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+.greenlines {
+  width: 100%;
+  height: 5px;
+  background: var(--btncolor);
 }
 
 @media screen and (max-width: 768px) {
@@ -356,8 +377,8 @@ ul.breadcrumb li a:hover {
   .sidebarcontainer {
     grid-template-areas:
       "search-box"
-      "content-list"
-      "category"
+      "category-list"
+      "tags"
       "img-container";
   }
 }
