@@ -1343,6 +1343,10 @@ footer {
     bottom: -150px;
   }
 
+  .bannerphotocontainer {
+    width: 54%;
+  }
+
   .bannerphoto {
     bottom: -357px;
     left: 40px;
@@ -1633,7 +1637,7 @@ footer {
   }
 
   .floatcontainer {
-    bottom: -230px;
+    bottom: -200px;
 
     grid-template-columns: 140px 1fr 200px;
   }
@@ -1643,12 +1647,12 @@ footer {
   }
 
   .bannerphoto {
-    bottom: -233px;
+    bottom: -206px;
   }
 
   .bannerphotocontainer {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 300px;
   }
 
   .textcontainer {
@@ -1830,7 +1834,7 @@ footer {
   }
 
   .bannerphoto {
-    bottom: -296px;
+    bottom: -344px;
     left: 0;
   }
 
@@ -1860,7 +1864,7 @@ footer {
   .floatcontainer {
     display: flex;
     flex-direction: column;
-    bottom: -290px;
+    bottom: -340px;
     padding: 30px 0px;
   }
 
