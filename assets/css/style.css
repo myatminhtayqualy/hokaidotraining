@@ -347,6 +347,7 @@ ul {
   display: flex;
   justify-content: space-between;
   color: black;
+  margin: 15px 0px;
 }
 
 .floatbtncontainer {
@@ -542,7 +543,7 @@ ul {
 
 .aboutustextcontainer {
   width: 100%;
-  max-width: 800px;
+  max-width: 1400px;
   margin: auto;
   margin-top: 60px;
 }
@@ -551,7 +552,7 @@ ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.9;
-  text-align: justify;
+  text-align: center;
 }
 
 .saycontainer {
@@ -590,6 +591,11 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.chatbubbleparagraph {
+  line-height: 1.9;
+  text-align: center;
 }
 
 .aboutusphotocontainer {
@@ -663,7 +669,7 @@ ul {
 
 .myanmarcontainer {
   width: 100%;
-  max-width: 800px;
+  max-width: 1400px;
   margin: 0 auto;
 
   display: flex;
@@ -681,6 +687,7 @@ ul {
 .myanmarparagraph {
   line-height: 1.9;
   font-size: 16px;
+  text-align: center;
 }
 
 h2.aboutmyanmarengheader {
@@ -690,6 +697,7 @@ h2.aboutmyanmarengheader {
 
 .aboutus_subheader {
   margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .myanmarcontainer {
@@ -1477,6 +1485,10 @@ footer {
     background: white;
   }
 
+  .child {
+    top: -40px;
+  }
+
   .navbartogellericon {
     width: 60px;
     height: 60px;
@@ -1550,6 +1562,8 @@ footer {
 
   .datetext p {
     font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 28px;
   }
 
   .nav-group {
@@ -1775,13 +1789,23 @@ footer {
     flex-direction: column;
   }
 
+  .aboutusparagraph {
+    font-size: 14px;
+    text-align: justify;
+  }
+
   .myanmarcontainer {
     width: 95%;
+  }
+
+  .chatbubbleparagraph {
+    text-align: justify;
   }
 
   .myanmarparagraph {
     line-height: 1.7;
     font-size: 14px;
+    text-align: justify;
   }
 
   .floatcontainer {
@@ -2183,10 +2207,6 @@ footer {
   }
 
   .aboutusengheader {
-    font-size: 14px;
-  }
-
-  .aboutusparagraph {
     font-size: 14px;
   }
 
