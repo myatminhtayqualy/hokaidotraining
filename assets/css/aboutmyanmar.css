@@ -32,6 +32,10 @@ body {
   background-color: #fff;
 }
 
+.aboutmmparagraph {
+  line-height: 1.9;
+}
+
 ul.breadcrumb {
   padding: 10px 5px;
   list-style: none;
@@ -155,6 +159,7 @@ ul.breadcrumb li a:hover {
 .aboutschooltext {
   margin-top: 60px;
   margin-bottom: 30px;
+  line-height: 1.9;
 }
 
 .aboutschoolheader li {
@@ -169,6 +174,12 @@ ul.breadcrumb li a:hover {
   font-size: 20px; /* Size of the square */
   padding-right: 0px; /* Space between the square and text */
   border-radius: 5px;
+}
+
+@media screen and (max-width: 926px) {
+  .container {
+    padding: 0px 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -190,5 +201,14 @@ ul.breadcrumb li a:hover {
 
   .aboutschoolheader li {
     font-size: 16px;
+    font-weight: 700;
+  }
+
+  .aboutschooltext {
+    text-align: justify;
+  }
+
+  .aboutmmparagraph {
+    text-align: justify;
   }
 }

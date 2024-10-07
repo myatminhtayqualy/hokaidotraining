@@ -149,6 +149,7 @@ ul.breadcrumb li a:hover {
 .wpmaincontentbox ol li {
   margin: 18px 0px;
   color: var(--btncolor);
+  font-weight: 700;
 }
 
 .wpmaincontentbox p {
@@ -175,7 +176,7 @@ ul.breadcrumb li a:hover {
 }
 
 .wpmaincontentbox h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--btncolor);
   font-family: "Noto Sans JP";
@@ -188,7 +189,7 @@ ul.breadcrumb li a:hover {
 
 .tableheaderrow {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-columns: 1.5fr 1.5fr 3fr;
   place-items: center;
   gap: 3px;
 
@@ -198,7 +199,7 @@ ul.breadcrumb li a:hover {
 
 .tablechildrow {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-columns: 1.5fr 1.5fr 3fr;
   place-items: center;
   gap: 3px;
   color: black;
@@ -401,24 +402,6 @@ ul.breadcrumb li a:hover {
   height: 16px;
 }
 
-/* .categoryrows::before {
-  content: "";
-
-  width: 24px;
-  height: 24px;
-
-  background: url("../icons/categoryleft.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  z-index: -1;
-} */
-
 .categoryrows p {
   font-family: "Noto Sans JP";
 }
@@ -435,6 +418,8 @@ ul.breadcrumb li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border-radius: 5px;
 
   font-family: "Noto Sans JP";
 }
@@ -516,8 +501,13 @@ ul.breadcrumb li a:hover {
       "img-container";
   }
 
+  .contentheader {
+    margin-top: 40px;
+  }
+
   .img-container {
     margin-top: 60px;
+    padding: 0px 10px;
   }
 
   .tableheaderrow {
