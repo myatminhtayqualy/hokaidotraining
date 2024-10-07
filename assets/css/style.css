@@ -993,20 +993,24 @@ footer {
 
 /* news page start */
 .news-mv {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   font-family: "Noto Sans JP";
 }
 
 .second-container {
-  max-width: 1440px;
+  max-width: 1400px;
   /* padding: 0 20px; */
   margin: 0 auto;
 }
 
 .news-mv .second-container .heading-blk {
+  /* background: url(../img/bannermap.png) no-repeat center/contain; */
+  /* padding-top: 12px; */
+  /* padding-bottom: 160px; */
+}
+.mv-heading{
   background: url(../img/bannermap.png) no-repeat center/contain;
-  padding-top: 12px;
-  padding-bottom: 160px;
+  height: 320px;
 }
 
 .page-name {
@@ -1037,9 +1041,10 @@ footer {
   font-size: 32px;
   font-weight: 400;
   color: #000000;
-  padding-top: 160px;
+  padding-top: 137px;
   padding-bottom: 17px;
   margin: 0;
+  padding-right: 175px;
 }
 
 .news-mv .second-container .mean {
@@ -1048,6 +1053,7 @@ footer {
   font-weight: 700;
   font-family: "lato";
   color: #307c4f;
+  padding-right: 175px;
 }
 
 .sec-notice {
@@ -1117,6 +1123,7 @@ footer {
   color: #000000;
   line-height: 1.5;
   margin-bottom: 30px;
+  letter-spacing: normal;
 }
 
 .pignation {
@@ -1161,7 +1168,7 @@ footer {
   background: #eff8e3;
   color: #307c4f;
   vertical-align: middle;
-  padding: 12px 20px;
+  padding: 11px 20px;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -1241,7 +1248,7 @@ footer {
 
 /* About Page start */
 .sec-about{
-  padding-top: 120px;
+  padding-top: 90px;
   padding-bottom: 160px;
   width: 100%;
   margin: 0 auto;
@@ -1308,6 +1315,7 @@ font-family: "Noto Sans JP";
   border-radius: 10px;
   color: #FFFFFF;
   font-weight: 600;
+  cursor: pointer;
 }
 .information-blk .name-description{
   /* width: calc((100% - 305px)); */
@@ -1317,6 +1325,41 @@ padding: 35px 0 35px 65px;
   font-size: 22px;
   color: #000000;
   font-weight: 400;
+  cursor: pointer;
+  line-height: 1.3;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.pagination li .active:hover{
+  border: 1px solid #03561E;
+ border-radius: 50%;
+ /* padding: 15px; */
+}
+.pagination li a{
+  color: #03561E;
+  font-size: 16px;
+  font-family: "lato";
+  font-weight: 700;
+}
+.pagination li .active{
+  padding: 9px 12px;
+border: 1px solid transparent;
+}
+/* .pagination li .autoactive{
+  border: 1px solid #03561E;
+  border-radius: 50%;
+
+} */
+
+.page-name a{
+  color: #000000;
+}
 
 @media screen and (max-width: 1200px) {
   .floatcontainer {
@@ -1354,8 +1397,17 @@ padding: 35px 0 35px 65px;
   .bannerbtn {
     margin: auto;
   }
+  .information-blk {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 7px;
 }
-
+.information-blk .name {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+}
 @media screen and (max-width: 1024px) {
   .customnavbar {
     padding: 0px 8px;
@@ -1457,6 +1509,13 @@ padding: 35px 0 35px 65px;
   }
 
   /* end accordion section  */
+
+  .tag .tag-blk {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
 }
 
 @media screen and (max-width: 926px) {
@@ -1614,6 +1673,11 @@ padding: 35px 0 35px 65px;
 
   .bannerphoto {
     bottom: -358px;
+  }
+
+  /* Custom tesing */
+  .container{
+    padding-top: 0;
   }
 }
 
@@ -1956,7 +2020,13 @@ padding: 35px 0 35px 65px;
 
   .page-name {
     font-size: 12px;
+    margin-bottom: 18px;
   }
+  .mv-heading{
+    height: 120px;
+    padding-bottom: 35px;
+  }
+  
 
   .news-mv .second-container .news-heading {
     font-size: 24px;
@@ -1964,9 +2034,11 @@ padding: 35px 0 35px 65px;
     padding-top: 50px;
     padding-bottom: 0;
     margin: 0;
+    padding-right: 0;
   }
 
   .news-mv {
+    
     padding-top: 0;
     /* padding-bottom: 160px; */
   }
@@ -1978,6 +2050,7 @@ padding: 35px 0 35px 65px;
     font-family: "lato";
     color: #307c4f;
     margin-top: 12px;
+    padding-right: 0;
   }
 
   .date-blk .date {
@@ -2026,6 +2099,9 @@ padding: 35px 0 35px 65px;
   font-size: 16px;
   margin-bottom: 40px;
 }
+.chatbubble{
+  max-width: 345px;
+}
 .sec-about .container .description {
   font-size: 16px;
   margin-bottom: 60px;
@@ -2055,7 +2131,7 @@ padding: 35px 0 35px 65px;
 }
 .information-blk .name {
   max-width: 60px;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 17px;
   background-color: #03561E;
   font-size: 14px;
   border-radius: 5px;
@@ -2067,12 +2143,18 @@ padding: 35px 0 35px 65px;
   margin-bottom: 7px;
 }
 .information-blk .name-description {
-  padding: 35px 0 35px 20px;
+  padding: 15px;
   background-color: #F5F5F5;
-  border-radius: 14px;
+  border-radius: 5px;
   font-size: 22px;
+  line-height: 1.7;
 }
-
+.tag .tag-blk {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
 
 }
 
