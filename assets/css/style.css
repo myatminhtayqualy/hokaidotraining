@@ -76,7 +76,7 @@ body.noscroll {
 
 .lato-bold {
   font-family: "Lato", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -320,10 +320,6 @@ ul {
   border-radius: 5px;
 }
 
-.datelink a.datelinktext {
-  color: white;
-}
-
 .leftcontainer {
   width: 100%;
   display: flex;
@@ -412,7 +408,7 @@ ul {
 }
 
 .textcontainer {
-  width: 42%;
+  width: 40%;
   max-width: 520px;
 
   height: auto;
@@ -446,17 +442,16 @@ ul {
 }
 
 .bannerphotocontainer {
-  width: 58%;
+  width: 60%;
 
   position: relative;
   /* background-color: yellow; */
 }
 
 .bannerphoto {
-  width: 100%;
   position: absolute;
   bottom: -337px;
-  left: 80px;
+  left: -15px;
 }
 
 .bannerphoto img {
@@ -465,11 +460,11 @@ ul {
 
 .bannerbtn {
   width: 100%;
-  max-width: 400px;
-  height: 80px;
+  max-width: 240px;
+  height: 60px;
   background: var(--limegreen);
 
-  border-radius: 40px;
+  border-radius: 30px;
   margin-left: 60px;
 
   display: flex;
@@ -493,7 +488,7 @@ ul {
 }
 
 .childtextcontainer {
-  max-width: 630px;
+  max-width: 400px;
   height: auto;
   min-height: 157px;
 
@@ -503,12 +498,6 @@ ul {
   align-items: center;
 
   margin-bottom: 40px;
-}
-
-.childtextcontainer h2 {
-  font-size: 60px;
-  margin: 0;
-  margin-bottom: 32px;
 }
 
 .leftcontainerchild {
@@ -620,11 +609,10 @@ ul {
 .aboutmyanmarbtn,
 .accordionbtn {
   background: var(--btncolor);
-  width: 100%;
-  max-width: 400px;
-  height: 80px;
+  width: 320px;
+  height: 60px;
 
-  border-radius: 40px;
+  border-radius: 30px;
 
   font-size: 18px;
 
@@ -710,7 +698,6 @@ h2.aboutmyanmarengheader {
 .aboutus_subheader {
   margin-top: 60px;
   margin-bottom: 30px;
-  font-weight: 700;
 }
 
 .myanmarcontainer {
@@ -1343,13 +1330,8 @@ footer {
     bottom: -150px;
   }
 
-  .bannerphotocontainer {
-    width: 54%;
-  }
-
   .bannerphoto {
     bottom: -357px;
-    left: 40px;
   }
 }
 
@@ -1503,10 +1485,6 @@ footer {
     background: white;
   }
 
-  .navbarcontainerfluid.bgchange {
-    background: white;
-  }
-
   .child {
     top: -40px;
   }
@@ -1637,7 +1615,7 @@ footer {
   }
 
   .floatcontainer {
-    bottom: -200px;
+    bottom: -153px;
 
     grid-template-columns: 140px 1fr 200px;
   }
@@ -1647,37 +1625,7 @@ footer {
   }
 
   .bannerphoto {
-    bottom: -206px;
-  }
-
-  .bannerphotocontainer {
-    width: 100%;
-    margin-top: 300px;
-  }
-
-  .textcontainer {
-    width: 100%;
-  }
-
-  .aboutus_subheader {
-    font-weight: 400;
-  }
-
-  .wrapper {
-    flex-direction: column;
-  }
-
-  .aboutusbtn,
-  .aboutmyanmarbtn,
-  .accordionbtn {
-    max-width: 345px;
-    height: 60px;
-  }
-
-  .bannerbtn {
-    width: 100%;
-    max-width: 345px;
-    height: 60px;
+    bottom: -358px;
   }
 }
 
@@ -1825,7 +1773,6 @@ footer {
   .bannerbtn {
     width: 100%;
     max-width: 345px;
-    height: 60px;
   }
 
   .bannerphotocontainer {
@@ -1834,7 +1781,7 @@ footer {
   }
 
   .bannerphoto {
-    bottom: -344px;
+    bottom: -296px;
     left: 0;
   }
 
@@ -1864,7 +1811,7 @@ footer {
   .floatcontainer {
     display: flex;
     flex-direction: column;
-    bottom: -340px;
+    bottom: -290px;
     padding: 30px 0px;
   }
 
@@ -2362,5 +2309,3 @@ footer {
     font-size: 13px;
   }
 }
-
-/* add another changes  */
