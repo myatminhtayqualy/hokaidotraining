@@ -47,7 +47,6 @@
 }
 
 .mapcontainer {
-  width: 100%;
   max-width: 556px;
   height: 320px;
 
@@ -59,15 +58,11 @@
   margin: 0 auto;
 
   position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .maptext {
   position: absolute;
-  top: 40%;
+  top: 24%;
   left: 13%;
 
   display: flex;
@@ -78,7 +73,6 @@
 
 .maptextheader {
   font-size: 32px;
-  line-height: 1.4;
 }
 
 .maptextquestion {
@@ -116,32 +110,14 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 926px) {
-  .container {
-    padding: 0px 10px;
-  }
-}
-
 /* End Question Section  */
 @media screen and (max-width: 768px) {
   .questionp {
     font-size: 12px;
   }
 
-  .container {
-    padding: 0 10px;
-  }
-
-  .mapcontainer {
-    height: 270px;
-  }
-
   .maptextheader {
     font-size: 24px;
-  }
-
-  .mapcontainer {
-    width: 75%;
   }
 
   .maptextquestion {
