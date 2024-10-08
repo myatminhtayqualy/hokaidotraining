@@ -11,6 +11,12 @@
 /* ===============================
 Top Page
 =============================== */
+header,
+main,
+section {
+  width: 100%;
+}
+
 body {
   /* height: 100vh; */
   display: flex;
@@ -20,7 +26,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 ul li {
@@ -81,7 +87,7 @@ body.noscroll {
 }
 
 .hiraginokaku {
-  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 p {
