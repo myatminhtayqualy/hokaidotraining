@@ -32,29 +32,21 @@
       rel="stylesheet"
     />
     <!-- noto sans  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- poppin  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- tsukumi rounded  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- noto serif  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -79,125 +71,93 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
     />
     <!-- font  Hiragino Kaku Gothic -->
-    <script>
-      (function (d) {
-        var config = {
-            kitId: "okm2nqr",
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-          }, config.scriptTimeout),
-          tk = d.createElement("script"),
-          f = false,
-          s = d.getElementsByTagName("script")[0],
-          a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
+
     <!-- css -->
     <base href="./assets/" />
     <link rel="stylesheet" href="css/import.css" />
     <!-- js -->
     <!-- Alpine -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script src="js/jquery-3.7.1.min.js" defer></script>
-    <script src="js/common.js" defer></script>
   </head>
   <body>
-    <div class="container-fluid navbarcontainerfluid">
-      <div class="container navbarcontainer">
-        <!-- start navbar  -->
-        <header class="customnavbar">
-          <h1 class="brand">
-            <a href="/" class="brandlink">
-              <img src="./img/logo.png" alt="hokaidologo" />
-              <p class="hiraginokaku brandtext">北海道福祉介護事業協同組合</p>
-            </a>
-          </h1>
-          <div class="navbartogellericon sp">
-            <div class="lines lineone"></div>
-            <div class="lines linetwo"></div>
-            <div class="lines linethree"></div>
-            <div class="icontext lato fz-10-sp">menu</div>
-          </div>
-          <div class="displaycenter menuitems">
-            <ul class="nav-group">
-              <li class="nav-item">
-                <a href="/hokaidotraining/#news" class="nav-link hiraginokaku"
-                  >お知らせ</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">News</p>
-              </li>
-              <li class="nav-item">
-                <a href="/hokaidotraining/#about" class="nav-link hiraginokaku"
-                  >組合について</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/hokaidotraining/#myanmar"
-                  class="nav-link hiraginokaku"
-                  >ミャンマーについて</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/hokaidotraining/#question"
-                  class="nav-link hiraginokaku"
-                  >よくある質問</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link brandbtn hiraginokaku"
-                  >お問い合わせ</a
-                >
-              </li>
-            </ul>
-          </div>
-        </header>
-        <!-- end navbar -->
-        <section class="news-mv">
-          <div class="container">
-            <div class="second-container">
-              <div class="heading-blk">
-                <div class="page-name">
-                  <a href="#">TOP</a>
-                  <!-- <p>TOP</p> -->
-                  <span>お知らせ</span>
-                </div>
-                <div class="mv-heading">
-                  <h2 class="news-heading">お知らせ</h2>
-                  <p class="mean">News</p>
-                </div>
-              </div>
-              <div></div>
+    <header>
+      <div class="container-fluid navbarcontainerfluid">
+        <div class="container navbarcontainer">
+          <!-- start navbar  -->
+          <div class="customnavbar">
+            <h1 class="brand">
+              <a href="/" class="brandlink">
+                <img src="./img/logo.png" alt="hokaidologo" />
+                <p class="hiraginokaku brandtext">北海道福祉介護事業協同組合</p>
+              </a>
+            </h1>
+            <div class="navbartogellericon sp">
+              <div class="lines lineone"></div>
+              <div class="lines linetwo"></div>
+              <div class="lines linethree"></div>
+              <div class="icontext lato fz-10-sp">menu</div>
+            </div>
+            <div class="displaycenter menuitems">
+              <ul class="nav-group">
+                <li class="nav-item">
+                  <a href="/hokaidotraining/#news" class="nav-link hiraginokaku"
+                    >お知らせ</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">News</p>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/hokaidotraining/#about"
+                    class="nav-link hiraginokaku"
+                    >組合について</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/hokaidotraining/#myanmar"
+                    class="nav-link hiraginokaku"
+                    >ミャンマーについて</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/hokaidotraining/#question"
+                    class="nav-link hiraginokaku"
+                    >よくある質問</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
+                </li>
+                <li class="nav-item">
+                  <a href="/" class="nav-link brandbtn hiraginokaku"
+                    >お問い合わせ</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
+          <!-- end navbar -->
+          <section class="news-mv">
+            <div class="container">
+              <div class="second-container">
+                <div class="heading-blk">
+                  <div class="page-name">
+                    <a href="#">TOP</a>
+                    <!-- <p>TOP</p> -->
+                    <span>お知らせ</span>
+                  </div>
+                  <div class="mv-heading">
+                    <h2 class="news-heading">お知らせ</h2>
+                    <p class="mean">News</p>
+                  </div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </header>
 
     <section class="sec-notice">
       <div class="container">
@@ -372,13 +332,6 @@
                     <a href="#"><p class="tag-name">＃テキスト</p></a>
                     <a href="#"><p class="tag-name">＃テキスト</p></a>
                     <a href="#"><p class="tag-name">＃テキスト</p></a>
-                    <!-- <p class="tag-name">＃テキスト</p>
-                    <p class="tag-name">＃テキスト</p>
-                    <p class="tag-name">＃テキスト</p>
-                    <p class="tag-name">＃テキスト</p>
-                    <p class="tag-name">＃テキスト</p>
-                    <p class="tag-name">＃テキスト</p>
-                    <p class="tag-name">＃テキスト</p> -->
                   </div>
                 </div>
               </div>
@@ -399,5 +352,42 @@
         &copy;北海道福祉介護事業協同組合
       </p>
     </footer>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "okm2nqr",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
   </body>
 </html>
