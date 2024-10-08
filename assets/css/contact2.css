@@ -5,6 +5,8 @@
 .news-mv {
   padding-top: 0;
   padding-bottom: 200px;
+  width: 100%;
+  background-color: #fff;
 }
 .news-mv .second-container .heading-blk {
   background: none;
@@ -178,6 +180,7 @@ textarea {
   border-bottom: 2px solid #000000;
   color: #000000;
   font-size: 16px;
+  font-weight: 600;
 }
 .agree {
   display: flex;
@@ -385,5 +388,8 @@ label, .check-box-blk .form-group {
 .news-mv {
     padding-top: 0;
     padding-bottom: 120px;
+}
+.policy a{
+  font-size: 14px;
 }
 }
