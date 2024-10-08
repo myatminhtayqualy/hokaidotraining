@@ -79,7 +79,7 @@ position: relative;
         text-align: left;
         color: #000000;
         font-weight: 400;
-        padding-bottom: 18px;
+        /* padding-bottom: 18px; */
         line-height: 2.1;
     }
     .news-mv .second-container .contact-btn {
