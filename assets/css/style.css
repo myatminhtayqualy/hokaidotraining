@@ -1019,11 +1019,11 @@ footer {
   color: #000000;
   gap: 30px;
 }
-.page-name span a {
+.page-name span{
   color: #000000;
   position: relative;
 }
-.page-name span a::before {
+.page-name span::before {
   content: "";
   background: url(../img/Component.png) no-repeat center/contain;
   width: 10px;
@@ -1031,7 +1031,7 @@ footer {
   position: absolute;
   display: block;
   left: -17px;
-  top: 6px;
+  top: 2px;
 }
 
 .news-mv .second-container .news-heading {
