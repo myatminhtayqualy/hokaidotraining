@@ -24,48 +24,13 @@
       <meta name="twitter:description" content="ページの説明" />
       <meta name="twitter:image:src" content="URL" />
       <!-- fonts -->
-      <!-- noto sans jp  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
-         rel="stylesheet"
-         />
-      <!-- noto sans  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet"
-         />
-      <!-- poppin  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-         rel="stylesheet"
-         />
-      <!-- tsukumi rounded  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap"
-         rel="stylesheet"
-         />
-      <!-- noto serif  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet"
-         />
-      <!-- lato font  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-         rel="stylesheet"
-         />
+
+       <!-- notosanjp , noto sans , noto serif , lato  -->
+      
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
       <!-- font awesome  -->
       <link
          rel="stylesheet"
@@ -74,369 +39,349 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
          />
-      <!-- font  Hiragino Kaku Gothic -->
-      <script>
-         (function (d) {
-           var config = {
-               kitId: "okm2nqr",
-               scriptTimeout: 3000,
-               async: true,
-             },
-             h = d.documentElement,
-             t = setTimeout(function () {
-               h.className =
-                 h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-             }, config.scriptTimeout),
-             tk = d.createElement("script"),
-             f = false,
-             s = d.getElementsByTagName("script")[0],
-             a;
-           h.className += " wf-loading";
-           tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-           tk.async = true;
-           tk.onload = tk.onreadystatechange = function () {
-             a = this.readyState;
-             if (f || (a && a != "complete" && a != "loaded")) return;
-             f = true;
-             clearTimeout(t);
-             try {
-               Typekit.load(config);
-             } catch (e) {}
-           };
-           s.parentNode.insertBefore(tk, s);
-         })(document);
-      </script>
+
       <!-- css -->
       <base href="./assets/" />
       <link rel="stylesheet" href="css/import.css" />
       <link rel="stylesheet" href="css/notice.css">
       <!-- js -->
-      <!-- Alpine -->
-      <script
-         defer
-         src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-         ></script>
-      <script src="js/jquery-3.7.1.min.js" defer></script>
-      <script src="js/common.js" defer></script>
+     
    </head>
    <body>
       
-      <div class="container-fluid navbarcontainerfluid">
+      <header>
+         <div class="container-fluid navbarcontainerfluid">
+          
+             <div class="container navbarcontainer">
+                <!-- start navbar  -->
+                <div class="customnavbar">
+                   <h1 class="brand">
+                      <a href="/" class="brandlink">
+                         <img src="./img/logo.png" alt="hokaidologo" />
+                         <p class="notosanjp brandtext">北海道福祉介護事業協同組合</p>
+                      </a>
+                   </h1>
+                   <div class="navbartogellericon sp">
+                      <div class="lines lineone"></div>
+                      <div class="lines linetwo"></div>
+                      <div class="lines linethree"></div>
+                      <div class="icontext lato fz-10-sp">MENU</div>
+                   </div>
+                   <div class="displaycenter menuitems">
+                      <ul class="nav-group">
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#news" class="nav-link notosanjp">お知らせ</a>
+                            <p class="lato-bold fz-14-sp sp navlinktext">News</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#about" class="nav-link notosanjp">組合について</a>
+                            <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#myanmar" class="nav-link notosanjp"
+                               >ミャンマーについて</a
+                               >
+                            <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#question" class="nav-link notosanjp">よくある質問</a>
+                            <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/" class="nav-link brandbtn notosanjp">お問い合わせ</a>
+                         </li>
+                      </ul>
+                   </div>
+                </div>
+                <!-- end navbar -->
+    
          
-         <div class="container navbarcontainer">
-            <!-- start navbar  -->
-            <header class="customnavbar">
-               <h1 class="brand">
-                  <a href="/" class="brandlink">
-                     <img src="./img/logo.png" alt="hokaidologo" />
-                     <p class="hiraginokaku brandtext">北海道福祉介護事業協同組合</p>
-                  </a>
-               </h1>
-               <div class="navbartogellericon sp">
-                  <div class="lines lineone"></div>
-                  <div class="lines linetwo"></div>
-                  <div class="lines linethree"></div>
-                  <div class="icontext lato fz-10-sp">MENU</div>
-               </div>
-               <div class="displaycenter menuitems">
-                  <ul class="nav-group">
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#news" class="nav-link hiraginokaku active">お知らせ</a>
-                        <p class="lato-bold fz-14-sp sp navlinktext">News</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#about" class="nav-link hiraginokaku">組合について</a>
-                        <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#myanmar" class="nav-link hiraginokaku"
-                           >ミャンマーについて</a
-                           >
-                        <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#question" class="nav-link hiraginokaku">よくある質問</a>
-                        <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/" class="nav-link brandbtn hiraginokaku">お問い合わせ</a>
-                     </li>
-                  </ul>
-               </div>
-            </header>
-            <!-- end navbar -->
-
-     
-
-         </div>
-     
-      </div> 
-
-      <div class="container-fluid noticecontainerfluid">
-           
-            <div class="container noticecontainer">
-                <ul class="breadcrumb">
-                    <li><a href="#">TOP</a></li>
-                    <li><a href="#">お知らせ </a></li>
-                    <li class="">タイトルタイトルタイトルタイトルタイトルタイトル</li>
-                  
-                  </ul>
+    
+             </div>
+         
+          </div>
+      </header>
 
 
-                
+      <main>
+
+         <section>
+      
+            <div class="container-fluid noticecontainerfluid">
+               
+                  <div class="container noticecontainer">
+                     <ul class="breadcrumb">
+                        <li><a href="#">TOP</a></li>
+                        <li><a href="#">お知らせ </a></li>
+                        <li class="">タイトルタイトルタイトルタイトルタイトルタイトル</li>
+                        
+                        </ul>
 
 
-                  <div class="maincontainer">
                      
 
-                     <div class="maincontentbox">
 
-                        <div class="contentcontainer">
-                           <h3 class="fz-32 notosanjp fz-16-sp fw-400 contentheader">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
-      
-                           <div class="contentrow">
-                               <span class="contentspan">カテゴリ</span>
-      
-                               <a href="#" class="contentpbox">お知らせ</a>
-                           </div>
-      
-                           <div class="contentrow">
-                              <span>公開日</span>
-      
-                              <a class="contentlink fw-700 lato-bold" href="/">2023.11.01</a>
-                          </div>
-      
-                          <div class="contentrow">
-                              <span class="contentspan">タグ</span>
-      
-                              <div class="categoryrow d-flex">
-                                 <a class="contentlinkbox first fw-700" href="/">テキスト</a>
-      
-                                 <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
-      
-                                 <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
-      
-                                 <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
-      
-                                 <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
-      
-                                 <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
-      
-                                 <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
-                              </div>
-                           </div>
-      
-      
-                          
-                        </div>
-
-
-                        <div class="wpmaincontentbox">
-                           
-                              <img src="./img/image.png" alt="">
+                        <div class="maincontainer">
                            
 
-                           <div>
-                              <strong>目次</strong>
-                              <ol>
-                              
-                                 <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
-                                 <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
-                                 <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
-                                 <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
-                              </ol>
-                           </div>
+                           <div class="maincontentbox">
 
-                           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-
-                           <h2>H2タイトルH2タイトルH2タイトルH2タイトルH2タイトルH2タイトルH2タイトル</h2>
-
-                           <p>テキストテキストテキストテキストテキストテキスト<span>強調テキスト強調テキスト強調テキス</span> トテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-
-                           <h3>H3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトル</h3>
-
-                           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                        </div>
-
-                        <div class="tablebox">
-                           <div class="tableheaderrow">
-                                 <div class="tableheader">テキスト</div>
-                                 <div class="tableheader">テキスト</div>
-                                 <div class="tableheader">テキスト</div>
-                           </div>
-
-                              <div class="tablechildrow">
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                              </div>
-
-                              <div class="tablechildrow">
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                              </div>
-
-                              <div class="tablechildrow">
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                              </div>
-
-                              <div class="tablechildrow">
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                                 <div class="tablechild">テキスト</div>
-                              </div>
-                        </div>
-
-                        <div class="hrline"></div>
-
-                        <div class="carouselcontrolbox">
-                            <div class="carousel_left d-flex justify-content-center align-items-center">
-                               <a href="" class="d-flex justify-content-center align-items-center">
-                                 <div class="carouseliconbox left">
-
+                              <div class="contentcontainer">
+                                 <h3 class="fz-32 notosanjp fz-16-sp fw-400 contentheader">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</h3>
+            
+                                 <div class="contentrow">
+                                    <span class="contentspan">カテゴリ</span>
+            
+                                    <a href="#" class="contentpbox">お知らせ</a>
                                  </div>
- 
-                                 <p class="text-btncolor">前の記事</p>
-                               </a>
-                            </div>
+            
+                                 <div class="contentrow">
+                                    <span>公開日</span>
+            
+                                    <a class="contentlink fw-700 lato-bold" href="/">2023.11.01</a>
+                              </div>
+            
+                              <div class="contentrow">
+                                    <span class="contentspan">タグ</span>
+            
+                                    <div class="categoryrow d-flex">
+                                       <a class="contentlinkbox first fw-700" href="/">テキスト</a>
+            
+                                       <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
+            
+                                       <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
+            
+                                       <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
+            
+                                       <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
+            
+                                       <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
+            
+                                       <a class="contentlinkbox fw-700 pc" href="/">テキスト</a>
+                                    </div>
+                                 </div>
+            
+            
+                              
+                              </div>
 
-                            <div class="carousel_right d-flex justify-content-center align-items-center">
-                                <a href="" class="d-flex justify-content-center align-items-center">
-                                    <p class="text-btncolor">前の記事</p>
 
-                                    <div class="carouseliconbox right">
+                              <div class="wpmaincontentbox">
+                                 
+                                    <img src="./img/image.png" alt="">
+                                 
+
+                                 <div>
+                                    <strong>目次</strong>
+                                    <ol>
+                                    
+                                       <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+                                       <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+                                       <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+                                       <li>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+                                    </ol>
+                                 </div>
+
+                                 <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+                                 <h2>H2タイトルH2タイトルH2タイトルH2タイトルH2タイトルH2タイトルH2タイトル</h2>
+
+                                 <p>テキストテキストテキストテキストテキストテキスト<span>強調テキスト強調テキスト強調テキス</span> トテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+                                 <h3>H3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトルH3タイトル</h3>
+
+                                 <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                              </div>
+
+                              <div class="tablebox">
+                                 <div class="tableheaderrow">
+                                       <div class="tableheader">テキスト</div>
+                                       <div class="tableheader">テキスト</div>
+                                       <div class="tableheader">テキスト</div>
+                                 </div>
+
+                                    <div class="tablechildrow">
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                    </div>
+
+                                    <div class="tablechildrow">
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                    </div>
+
+                                    <div class="tablechildrow">
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                    </div>
+
+                                    <div class="tablechildrow">
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                       <div class="tablechild">テキスト</div>
+                                    </div>
+                              </div>
+
+                              <div class="hrline"></div>
+
+                              <div class="carouselcontrolbox">
+                                 <div class="carousel_left d-flex justify-content-center align-items-center">
+                                    <a href="" class="d-flex justify-content-center align-items-center">
+                                       <div class="carouseliconbox left">
+
+                                       </div>
+      
+                                       <p class="text-btncolor">前の記事</p>
+                                    </a>
+                                 </div>
+
+                                 <div class="carousel_right d-flex justify-content-center align-items-center">
+                                    <a href="" class="d-flex justify-content-center align-items-center">
+                                          <p class="text-btncolor">前の記事</p>
+
+                                          <div class="carouseliconbox right">
+                                             
+                                          </div>
+                                    </a>
+
+                                       
+                                 </div>
+                              </div>
+
+
+                           </div>
+
+                           
+
+                           <div class="sidebarcontainer">
+                              <div class="img-container">
+                                 <img src="./img/placeholder.png" width="100%" alt="">
+                              </div>
+                              <div class="search-box">
+                                 <form action="" class="searchform">
+                                    
+                                    <div class="form-group">
+                                       <input type="text" name="search" class="searchinput" id="search" placeholder="Search">
+                                    
+                                    </div>
+
+                                    <button type="submit" value="submit" class="submitbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    
+                                 </form>
+                              </div>
+
+                              <div class="category-list">
+                                 <h6 class="categoryheader fz-22 fw-700">カテゴリ</h6>
+
+                                 <div class="greenlines"></div>
+
+                                 <div class="categoryrows">
+                                    <a href="" class="categorylink">
+                                       <p class="fz-16">お知らせ</p>
+                                       <img src="./icons/categoryleft.png" alt="">
+                                    </a>
+                                 </div>
+
+                                 <div class="categoryrows">
+                                    <a href="" class="categorylink">
+                                       <p class="fz-16">ニュース</p>
+                                       <img src="./icons/categoryleft.png" alt="">
+                                    </a>
+                                 </div>
+
+                              <div class="categoryrows">
+                                    <a href="" class="categorylink">
+                                       <p class="fz-16">テキストテキスト</p>
+                                       <img src="./icons/categoryleft.png" alt="">
+                                    </a>
+                                 </div>
+
+                                 <div class="categoryrows">
+                                    <a href="" class="categorylink">
+                                       <p class="fz-16">テキストテキスト</p>
+                                       <img src="./icons/categoryleft.png" alt="">
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="tags">
+
+                                 <h6 class="tagsheader fz-22 fw-700">カテゴリ</h6>
+
+                                 <div class="tagsgreenlines"></div>
+
+                                 <div class="tagsboxcontainer">
+                                    <div class="tagbox">
+                                       <a href="" class="tagboxlink"><p>#テキスト</p></a>
                                        
                                     </div>
-                                </a>
-
-                                 
-                            </div>
-                        </div>
-
-
-                     </div>
-
-                     
-
-                     <div class="sidebarcontainer">
-                        <div class="img-container">
-                            <img src="./img/placeholder.png" width="100%" alt="">
-                        </div>
-                        <div class="search-box">
-                            <form action="" class="searchform">
-                                
-                               <div class="form-group">
-                                 <input type="text" name="search" class="searchinput" id="search" placeholder="Search">
-                                
-                               </div>
-
-                               <button type="submit" value="submit" class="submitbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                
-                            </form>
-                        </div>
-
-                        <div class="category-list">
-                            <h6 class="categoryheader fz-22 fw-700">カテゴリ</h6>
-
-                            <div class="greenlines"></div>
-
-                           <div class="categoryrows">
-                              <a href="" class="categorylink">
-                                 <p class="fz-16">お知らせ</p>
-                                 <img src="./icons/categoryleft.png" alt="">
-                              </a>
-                           </div>
-
-                           <div class="categoryrows">
-                              <a href="" class="categorylink">
-                                 <p class="fz-16">ニュース</p>
-                                 <img src="./icons/categoryleft.png" alt="">
-                              </a>
-                           </div>
-
-                          <div class="categoryrows">
-                              <a href="" class="categorylink">
-                                 <p class="fz-16">テキストテキスト</p>
-                                 <img src="./icons/categoryleft.png" alt="">
-                              </a>
-                           </div>
-
-                           <div class="categoryrows">
-                              <a href="" class="categorylink">
-                                 <p class="fz-16">テキストテキスト</p>
-                                 <img src="./icons/categoryleft.png" alt="">
-                              </a>
-                           </div>
-                        </div>
-                        <div class="tags">
-
-                           <h6 class="tagsheader fz-22 fw-700">カテゴリ</h6>
-
-                           <div class="tagsgreenlines"></div>
-
-                           <div class="tagsboxcontainer">
-                              <div class="tagbox">
-                                 <a href="" class="tagboxlink"><p>#テキスト</p></a>
-                                 
-                              </div>
-   
-                              <div class="tagbox">
-                                 <a href="" class="tagboxlink"><p>#テキスト</p></a>
-                              </div>
-   
-                              <div class="tagbox">
-                                 <a href="" class="tagboxlink"><p>#テキスト</p></a>
-                              </div>
-   
-                              <div class="tagbox">
-                                 <a href="" class="tagboxlink"><p>#テキスト</p></a>
-                              </div>
-   
-                              <div class="tagbox">
-                                 <a href="" class="tagboxlink"><p>#テキスト</p></a>
-                              </div>
-   
-                              <div class="tagbox">
-                                 <a href="" class="tagboxlink"><p>#テキスト</p></a>
-                              </div>
-   
-                              <div class="tagbox">
-                                 <a href="" class="tagboxlink"><p>#テキスト</p></a>
+         
+                                    <div class="tagbox">
+                                       <a href="" class="tagboxlink"><p>#テキスト</p></a>
+                                    </div>
+         
+                                    <div class="tagbox">
+                                       <a href="" class="tagboxlink"><p>#テキスト</p></a>
+                                    </div>
+         
+                                    <div class="tagbox">
+                                       <a href="" class="tagboxlink"><p>#テキスト</p></a>
+                                    </div>
+         
+                                    <div class="tagbox">
+                                       <a href="" class="tagboxlink"><p>#テキスト</p></a>
+                                    </div>
+         
+                                    <div class="tagbox">
+                                       <a href="" class="tagboxlink"><p>#テキスト</p></a>
+                                    </div>
+         
+                                    <div class="tagbox">
+                                       <a href="" class="tagboxlink"><p>#テキスト</p></a>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
-                        </div>
-                     </div>
 
+                        </div>
                   </div>
+
+               
             </div>
 
-          
-      </div>
+         </section>
 
-      
 
          
 
-        
-            
-       
-
-            <div class="floatbutton displaycenter">
-               <div class="pagetop displaycenter">
-                  <img src="./icons/top.png" alt="scrolltop" />
-               </div>
-            </div>
-            
-         
+      </main>
 
          <footer id="footer-main">
+            <!-- start page top button  -->
+               <div class="floatbutton displaycenter">
+                  <div class="pagetop displaycenter d-none">
+                     <img src="./icons/top.png" alt="scrolltop" />
+                  </div>
+               </div>
+            <!-- end page top button  -->
+
             <p class="copyrighttext lato-bold fz-14">
                &copy;北海道福祉介護事業協同組合
             </p>
          </footer>
+
+
+         <!-- js -->
+         <!-- Alpine -->
+         <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+         <!-- jquery  -->
+         <script src="js/jquery-3.7.1.min.js"></script>
+
+         <!-- custom js  -->
+         <script src="js/common.js"></script>
       
    </body>
 </html>

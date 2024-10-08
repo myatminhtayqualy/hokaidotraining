@@ -32,36 +32,26 @@
       rel="stylesheet"
     />
     <!-- noto sans  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- poppin  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- tsukumi rounded  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <!-- noto serif  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <!-- lato font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -79,330 +69,336 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
     />
     <!-- font  Hiragino Kaku Gothic -->
-    <script>
-      (function (d) {
-        var config = {
-            kitId: "okm2nqr",
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className =
-              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-          }, config.scriptTimeout),
-          tk = d.createElement("script"),
-          f = false,
-          s = d.getElementsByTagName("script")[0],
-          a;
-        h.className += " wf-loading";
-        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != "complete" && a != "loaded")) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
-      })(document);
-    </script>
+    
     <!-- css -->
     <base href="./assets/" />
     <link rel="stylesheet" href="css/import.css" />
     <link rel="stylesheet" href="css/contact2.css" />
     <!-- js -->
     <!-- Alpine -->
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script src="js/jquery-3.7.1.min.js" defer></script>
-    <script src="js/common.js" defer></script>
+    
   </head>
   <body>
-    <div class="container-fluid navbarcontainerfluid">
-      <div class="container navbarcontainer">
-        <!-- start navbar  -->
-        <header class="customnavbar">
-          <h1 class="brand">
-            <a href="/" class="brandlink">
-              <img src="./img/logo.png" alt="hokaidologo" />
-              <p class="hiraginokaku brandtext">北海道福祉介護事業協同組合</p>
-            </a>
-          </h1>
-          <div class="navbartogellericon sp">
-            <div class="lines lineone"></div>
-            <div class="lines linetwo"></div>
-            <div class="lines linethree"></div>
-            <div class="icontext lato fz-10-sp">menu</div>
+    <header class="mv-com">
+      <div class="container-fluid navbarcontainerfluid">
+        <div class="container navbarcontainer">
+          <!-- start navbar  -->
+          <div class="customnavbar">
+            <h1 class="brand">
+              <a href="/" class="brandlink">
+                <img src="./img/logo.png" alt="hokaidologo" />
+                <p class="hiraginokaku brandtext">北海道福祉介護事業協同組合</p>
+              </a>
+            </h1>
+            <div class="navbartogellericon sp">
+              <div class="lines lineone"></div>
+              <div class="lines linetwo"></div>
+              <div class="lines linethree"></div>
+              <div class="icontext lato fz-10-sp">menu</div>
+            </div>
+            <div class="displaycenter menuitems">
+              <ul class="nav-group">
+                <li class="nav-item">
+                  <a href="/hokaidotraining/#news" class="nav-link hiraginokaku"
+                    >お知らせ</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">News</p>
+                </li>
+                <li class="nav-item">
+                  <a href="/hokaidotraining/#about" class="nav-link hiraginokaku"
+                    >組合について</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/hokaidotraining/#myanmar"
+                    class="nav-link hiraginokaku"
+                    >ミャンマーについて</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="/hokaidotraining/#question"
+                    class="nav-link hiraginokaku"
+                    >よくある質問</a
+                  >
+                  <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
+                </li>
+                <li class="nav-item">
+                  <a href="/" class="nav-link brandbtn hiraginokaku"
+                    >お問い合わせ</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="displaycenter menuitems">
-            <ul class="nav-group">
-              <li class="nav-item">
-                <a href="/hokaidotraining/#news" class="nav-link hiraginokaku"
-                  >お知らせ</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">News</p>
-              </li>
-              <li class="nav-item">
-                <a href="/hokaidotraining/#about" class="nav-link hiraginokaku"
-                  >組合について</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/hokaidotraining/#myanmar"
-                  class="nav-link hiraginokaku"
-                  >ミャンマーについて</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="/hokaidotraining/#question"
-                  class="nav-link hiraginokaku"
-                  >よくある質問</a
-                >
-                <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link brandbtn hiraginokaku"
-                  >お問い合わせ</a
-                >
-              </li>
-            </ul>
+          <!-- end navbar -->
+          
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="news-mv">
+      <div class="container">
+        <div class="second-container">
+          <div class="heading-blk">
+            <h2 class="news-heading">お問い合わせ</h2>
+            <p class="mean">Contact</p>
           </div>
-        </header>
-        <!-- end navbar -->
-        <section class="news-mv">
-          <div class="container">
-            <div class="second-container">
-              <div class="heading-blk">
-                <h2 class="news-heading">お問い合わせ</h2>
-                <p class="mean">Contact</p>
-              </div>
-              <p class="fill-txt">下記の必須項目をご入力ください</p>
-              <p class="required-txt">は必須項目です。</p>
-              <form role="search" method="get" action="" class="form-container"></form>
-              <div class="name-blk">
-                <label>氏名</label>
-                <div class="name-form">
-                  <input
-                  type="search"
-                  class="contact-search"
-                  value=""
-                  name="s"
-                  placeholder="姓"
-                />
-                <input
-                  type="search"
-                  class="contact-search"
-                  value=""
-                  name="s"
-                  placeholder="名"
-                /></div>
+          <p class="fill-txt">下記の必須項目をご入力ください</p>
+          <p class="required-txt">は必須項目です。</p>
+          <form role="search" method="get" action="" class="form-container"></form>
+          <div class="name-blk">
+            <label>氏名</label>
+            <div class="name-form">
+              <input
+              type="search"
+              class="contact-search"
+              value=""
+              name="s"
+              placeholder="姓"
+            />
+            <input
+              type="search"
+              class="contact-search"
+              value=""
+              name="s"
+              placeholder="名"
+            /></div>
 
-              </div>
-              <div class="name-blk">
-                <label>氏名（フリガナ）</label>
-                <div class="name-form">
-                  <input
-                  type="search"
-                  class="contact-search"
-                  value=""
-                  name="s"
-                  placeholder="セイ"
-                />
-                <input
-                  type="search"
-                  class="contact-search"
-                  value=""
-                  name="s"
-                  placeholder="メイ"
-                /></div>
+          </div>
+          <div class="name-blk">
+            <label>氏名（フリガナ）</label>
+            <div class="name-form">
+              <input
+              type="search"
+              class="contact-search"
+              value=""
+              name="s"
+              placeholder="セイ"
+            />
+            <input
+              type="search"
+              class="contact-search"
+              value=""
+              name="s"
+              placeholder="メイ"
+            /></div>
 
+          </div>
+          <div class="commmon-form form1">
+            <label>メールアドレス</label>
+            <div class="com-form">
+              <input
+              type="search"
+              class="contact-search"
+              value=""
+              name="s"
+              placeholder="ご連絡用メールアドレスを入力してください"
+            />
+          </div>
+            
+              
+            </div>
+            <div class="commmon-form form2">
+              <label>メールアドレス（確認用）</label>
+              <div class="com-form">
+                <input
+                type="search"
+                class="contact-search"
+                value=""
+                name="s"
+                placeholder="ご連絡用メールアドレスを入力してください"
+              />
+            </div>
+              
+                
               </div>
-              <div class="commmon-form form1">
-                <label>メールアドレス</label>
+              <div class="commmon-form form3">
+                <label>会社名</label>
                 <div class="com-form">
                   <input
                   type="search"
                   class="contact-search"
                   value=""
                   name="s"
-                  placeholder="ご連絡用メールアドレスを入力してください"
+                  placeholder="XXXX株式会社"
                 />
               </div>
                 
                   
                 </div>
-                <div class="commmon-form form2">
-                  <label>メールアドレス（確認用）</label>
+                <div class="commmon-form form4">
+                  <label>所属部署</label>
                   <div class="com-form">
                     <input
                     type="search"
                     class="contact-search"
                     value=""
                     name="s"
-                    placeholder="ご連絡用メールアドレスを入力してください"
+                    placeholder="ご記入ください"
                   />
                 </div>
                   
                     
                   </div>
-                  <div class="commmon-form form3">
-                    <label>会社名</label>
+                  <div class="commmon-form form5">
+                    <label>お役職</label>
                     <div class="com-form">
                       <input
                       type="search"
                       class="contact-search"
                       value=""
                       name="s"
-                      placeholder="XXXX株式会社"
+                      placeholder="ご記入ください"
                     />
                   </div>
                     
                       
                     </div>
-                    <div class="commmon-form form4">
-                      <label>所属部署</label>
+                    <div class="commmon-form form6">
+                      <label>住所</label>
                       <div class="com-form">
                         <input
                         type="search"
                         class="contact-search"
                         value=""
                         name="s"
-                        placeholder="ご記入ください"
+                        placeholder="北海道XX市XXXX"
                       />
                     </div>
                       
                         
                       </div>
-                      <div class="commmon-form form5">
-                        <label>お役職</label>
+                      <div class="commmon-form form7">
+                        <label>電話番号</label>
                         <div class="com-form">
                           <input
                           type="search"
                           class="contact-search"
                           value=""
                           name="s"
-                          placeholder="ご記入ください"
+                          placeholder="000-0000-0000"
                         />
                       </div>
                         
                           
                         </div>
-                        <div class="commmon-form form6">
-                          <label>住所</label>
-                          <div class="com-form">
-                            <input
-                            type="search"
-                            class="contact-search"
-                            value=""
-                            name="s"
-                            placeholder="北海道XX市XXXX"
-                          />
-                        </div>
-                          
+                        <div class="commmon-form form8">
+                          <label class="check">お問い合わせ種別（複数選択可</label>
+
+                          <div class="check-box-blk">
+
                             
-                          </div>
-                          <div class="commmon-form form7">
-                            <label>電話番号</label>
-                            <div class="com-form">
-                              <input
-                              type="search"
-                              class="contact-search"
-                              value=""
-                              name="s"
-                              placeholder="000-0000-0000"
-                            />
-                          </div>
-                            
-                              
+                            <div class="form-group">
+                              <input type="checkbox" class="custom-input" id="介護技能実習生を受け入れたい" />
+                              <label for="custom-checkBox1">介護技能実習生を受け入れたい</label>
+
+                            </div> 
+                            <div class="form-group">
+                              <input type="checkbox" class="custom-input" id="介護技能実習生を受け入れたい" />
+                              <label for="custom-checkBox1">介護技能実習生を受け入れたい</label>
+
+                            </div> 
+                            <div class="form-group">
+                              <input type="checkbox" class="custom-input" id="ミャンマーを視察したい" />
+                              <label for="custom-checkBox1">ミャンマーを視察したい</label>
+
+                            </div> 
+                            <div class="form-group">
+                              <input type="checkbox" class="custom-input" id="技能実習制度について詳しく聞きたい" />
+                              <label for="custom-checkBox1">技能実習制度について詳しく聞きたい</label>
+
+                            </div> 
+                            <div class="form-group">
+                              <input type="checkbox" class="custom-input" id="技能実習制度について詳しく聞きたい" />
+                              <label for="custom-checkBox1">技能実習制度について詳しく聞きたい</label>
+
+                            </div> 
+                            <div class="form-group">
+                              <input type="checkbox" class="custom-input" id="その他" />
+                              <label for="custom-checkBox1">その他</label>
+
                             </div>
-                            <div class="commmon-form form8">
-                              <label class="check">お問い合わせ種別（複数選択可</label>
+                          </div>
 
-                              <div class="check-box-blk">
+                          </div>
+                          <div class="commmon-form form9">
+                    <label>お問い合わせ内容</label>
+                    <div class="com-form">
+                      <textarea   id="freeform" name="freeform" rows="10" cols="50" class="comment-blk" placeholder="ご記入ください"></textarea>
+                    </div>  
 
-                                
-                                <div class="form-group">
-                                  <input type="checkbox" class="custom-input" id="介護技能実習生を受け入れたい" />
-                                  <label for="custom-checkBox1">介護技能実習生を受け入れたい</label>
+                    
+                  
+                  </div>
+                  <p class="policy">「<a href="#">個人情報保護方針を</a>ご確認の上、同意される場合は下記のチェックボックスを選択してください。</p>
+                  <div class="agree-blk">
+                    <div class="form-group agree">
+                      <input type="checkbox" class="custom-input" id="その他" />
+                      <label for="custom-checkBox1">その他</label>
 
-                                </div> 
-                                <div class="form-group">
-                                  <input type="checkbox" class="custom-input" id="介護技能実習生を受け入れたい" />
-                                  <label for="custom-checkBox1">介護技能実習生を受け入れたい</label>
-
-                                </div> 
-                                <div class="form-group">
-                                  <input type="checkbox" class="custom-input" id="ミャンマーを視察したい" />
-                                  <label for="custom-checkBox1">ミャンマーを視察したい</label>
-
-                                </div> 
-                                <div class="form-group">
-                                  <input type="checkbox" class="custom-input" id="技能実習制度について詳しく聞きたい" />
-                                  <label for="custom-checkBox1">技能実習制度について詳しく聞きたい</label>
-
-                                </div> 
-                                <div class="form-group">
-                                  <input type="checkbox" class="custom-input" id="技能実習制度について詳しく聞きたい" />
-                                  <label for="custom-checkBox1">技能実習制度について詳しく聞きたい</label>
-
-                                </div> 
-                                <div class="form-group">
-                                  <input type="checkbox" class="custom-input" id="その他" />
-                                  <label for="custom-checkBox1">その他</label>
-
-                                </div>
-                              </div>
-
-                              </div>
-                              <div class="commmon-form form9">
-                        <label>お問い合わせ内容</label>
-                        <div class="com-form">
-                          <textarea   id="freeform" name="freeform" rows="10" cols="50" class="comment-blk" placeholder="ご記入ください"></textarea>
-                        </div>  
-
-                        
-                      
-                      </div>
-                      <p class="policy">「<a href="#">個人情報保護方針を</a>ご確認の上、同意される場合は下記のチェックボックスを選択してください。</p>
-                      <div class="agree-blk">
-                        <div class="form-group agree">
-                          <input type="checkbox" class="custom-input" id="その他" />
-                          <label for="custom-checkBox1">その他</label>
-
-                        </div>
-                      </div>
-                      <a href="/" class="accordionbtn txt-center fz-18 fz-16-sp"
-                     >よくあるご質問まとめ</a
-                     >
-                <!-- input-container -->
-              </form>
-              <!-- searchform -->
-            </div>
-          </div>
-        </section>
+                    </div>
+                  </div>
+                  <a href="/" class="accordionbtn txt-center fz-18 fz-16-sp"
+                 >よくあるご質問まとめ</a
+                 >
+            <!-- input-container -->
+          </form>
+          <!-- searchform -->
+        </div>
       </div>
-    </div>
+    </section>
     
-    <div class="floatbutton displaycenter">
-      <div class="pagetop displaycenter">
-        <img src="./icons/top.png" alt="scrolltop" />
-      </div>
-    </div>
-
+  </main>
     <footer id="footer-main">
-      <p class="copyrighttext lato-bold fz-14">
+      <div class="floatbutton displaycenter">
+        <div class="pagetop displaycenter d-none">
+          <img src="./icons/top.png" alt="scrolltop" />
+        </div>
+      </div> 
+      <div class="copyrighttext lato-bold fz-14">
         &copy;北海道福祉介護事業協同組合
-      </p>
+      </div>
     </footer>
   </body>
+  <script>
+    (function (d) {
+      var config = {
+          kitId: "okm2nqr",
+          scriptTimeout: 3000,
+          async: true,
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+  <script
+  
+  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/common.js"></script>
 </html>

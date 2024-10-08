@@ -38,6 +38,9 @@ $(document).ready(function() {
         $(this).addClass("active");
      });
 
+     
+     
+  
     
           $(window).scroll(function(){
                const footerMain = $("#footer-main");
@@ -73,6 +76,8 @@ $(document).ready(function() {
                     });
                }, 300);
           });
+          
+        
 
 
 
