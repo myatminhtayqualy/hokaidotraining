@@ -29,6 +29,7 @@ $(document).ready(function() {
           $('.menuitems').toggleClass('show');
           $('.customnavbar').toggleClass('bgchange');
           $("body").toggleClass("noscroll");
+          $(".navbarcontainerfluid").toggleClass("bgchange");
      });
 
      $(".nav-link").on('click',function(e){
