@@ -9,7 +9,7 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1700px;
   padding: 30px 10px;
 }
 
@@ -100,7 +100,7 @@ ul.breadcrumb li + li:before {
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: #0275d8;
+  color: black;
   text-decoration: none;
 }
 
