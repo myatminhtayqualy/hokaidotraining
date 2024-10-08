@@ -300,7 +300,6 @@ ul.breadcrumb li a:hover {
 
 .img-container {
   grid-area: img-container;
-  /* height: 500px; */
 }
 
 .img-container img {
@@ -518,6 +517,7 @@ ul.breadcrumb li a:hover {
 
   .img-container {
     margin-top: 60px;
+    padding: 0px 10px;
   }
 
   .tableheaderrow {

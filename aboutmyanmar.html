@@ -24,48 +24,13 @@
       <meta name="twitter:description" content="ページの説明" />
       <meta name="twitter:image:src" content="URL" />
       <!-- fonts -->
-      <!-- noto sans jp  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
-         rel="stylesheet"
-         />
-      <!-- noto sans  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet"
-         />
-      <!-- poppin  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-         rel="stylesheet"
-         />
-      <!-- tsukumi rounded  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap"
-         rel="stylesheet"
-         />
-      <!-- noto serif  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet"
-         />
-      <!-- lato font  -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-         rel="stylesheet"
-         />
+
+      <!-- notosanjp , noto sans , noto serif , lato  -->
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
       <!-- font awesome  -->
       <link
          rel="stylesheet"
@@ -74,254 +39,229 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
          />
-      <!-- font  Hiragino Kaku Gothic -->
-      <script>
-         (function (d) {
-           var config = {
-               kitId: "okm2nqr",
-               scriptTimeout: 3000,
-               async: true,
-             },
-             h = d.documentElement,
-             t = setTimeout(function () {
-               h.className =
-                 h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-             }, config.scriptTimeout),
-             tk = d.createElement("script"),
-             f = false,
-             s = d.getElementsByTagName("script")[0],
-             a;
-           h.className += " wf-loading";
-           tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-           tk.async = true;
-           tk.onload = tk.onreadystatechange = function () {
-             a = this.readyState;
-             if (f || (a && a != "complete" && a != "loaded")) return;
-             f = true;
-             clearTimeout(t);
-             try {
-               Typekit.load(config);
-             } catch (e) {}
-           };
-           s.parentNode.insertBefore(tk, s);
-         })(document);
-      </script>
+    
       <!-- css -->
       <base href="./assets/" />
       <link rel="stylesheet" href="css/import.css" />
       <link rel="stylesheet" href="css/aboutmyanmar.css">
-      <!-- js -->
-      <!-- Alpine -->
-      <script
-         defer
-         src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-         ></script>
-      <script src="js/jquery-3.7.1.min.js" defer></script>
-      <script src="js/common.js" defer></script>
+
+     
    </head>
    <body>
       
-      <div class="container-fluid navbarcontainerfluid">
+      <header>
+         <div class="container-fluid navbarcontainerfluid">
+          
+             <div class="container navbarcontainer">
+                <!-- start navbar  -->
+                <div class="customnavbar">
+                   <h1 class="brand">
+                      <a href="/" class="brandlink">
+                         <img src="./img/logo.png" alt="hokaidologo" />
+                         <p class="notosanjp brandtext">北海道福祉介護事業協同組合</p>
+                      </a>
+                   </h1>
+                   <div class="navbartogellericon sp">
+                      <div class="lines lineone"></div>
+                      <div class="lines linetwo"></div>
+                      <div class="lines linethree"></div>
+                      <div class="icontext lato fz-10-sp">MENU</div>
+                   </div>
+                   <div class="displaycenter menuitems">
+                      <ul class="nav-group">
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#news" class="nav-link notosanjp">お知らせ</a>
+                            <p class="lato-bold fz-14-sp sp navlinktext">News</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#about" class="nav-link notosanjp">組合について</a>
+                            <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#myanmar" class="nav-link notosanjp"
+                               >ミャンマーについて</a
+                               >
+                            <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/hokaidotraining/#question" class="nav-link notosanjp">よくある質問</a>
+                            <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
+                         </li>
+                         <li class="nav-item">
+                            <a href="/" class="nav-link brandbtn notosanjp">お問い合わせ</a>
+                         </li>
+                      </ul>
+                   </div>
+                </div>
+                <!-- end navbar -->
+    
          
-         <div class="container navbarcontainer">
-            <!-- start navbar  -->
-            <header class="customnavbar">
-               <h1 class="brand">
-                  <a href="/" class="brandlink">
-                     <img src="./img/logo.png" alt="hokaidologo" />
-                     <p class="hiraginokaku brandtext">北海道福祉介護事業協同組合</p>
-                  </a>
-               </h1>
-               <div class="navbartogellericon sp">
-                  <div class="lines lineone"></div>
-                  <div class="lines linetwo"></div>
-                  <div class="lines linethree"></div>
-                  <div class="icontext lato fz-10-sp">MENU</div>
+    
+             </div>
+         
+          </div>
+      </header>
+
+      <main>
+
+         <section>
+
+            <div class="container-fluid aboutmyanmarcontainerfluid">
+               <div class="container aboutmyanmarcontainertwo">
+                    
+   
+                     <ul class="breadcrumb">
+                        <li><a href="#" class="fz-16 fz-12-sp">Top</a></li>
+                        <li class="fz-16 fz-12-sp">ミャンマーについて</li>
+                  
+                      
+                      </ul>
+   
+                     <div class="myanmarmapcontainer">
+                         <div class="myanmartextcontainer">
+                             <div class="myanmartext">
+                                 <span class="notosanjp myanmartextheader fz-24-sp">ミャンマーについて</span>
+                                 <p class="lato-bold fz-20 myanmartextchild text-btncolor text-center fz-14-sp">About Myanmar</p>
+                             </div>
+                         </div>
+                     </div>
                </div>
-               <div class="displaycenter menuitems">
-                  <ul class="nav-group">
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#news" class="nav-link hiraginokaku active">お知らせ</a>
-                        <p class="lato-bold fz-14-sp sp navlinktext">News</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#about" class="nav-link hiraginokaku">組合について</a>
-                        <p class="lato-bold fz-14-sp sp navlinktext">About Us</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#myanmar" class="nav-link hiraginokaku"
-                           >ミャンマーについて</a
-                           >
-                        <p class="lato-bold fz-14-sp sp navlinktext">About Myanmar</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/hokaidotraining/#question" class="nav-link hiraginokaku">よくある質問</a>
-                        <p class="lato-bold fz-14-sp sp navlinktext">Questions</p>
-                     </li>
-                     <li class="nav-item">
-                        <a href="/" class="nav-link brandbtn hiraginokaku">お問い合わせ</a>
-                     </li>
-                  </ul>
-               </div>
-            </header>
-            <!-- end navbar -->
-
-     
-
-         </div>
-     
-      </div> 
-
-      <div class="container-fluid aboutmyanmarcontainerfluid">
-            <div class="container aboutmyanmarcontainertwo">
-                 
-
-                  <ul class="breadcrumb">
-                     <li><a href="#">Top</a></li>
-                     <li><a href="#">ミャンマーについて </a></li>
-               
-                   
-                   </ul>
-
-                  <div class="myanmarmapcontainer">
-                      <div class="myanmartextcontainer">
-                          <div class="myanmartext">
-                              <span class="notosanjp myanmartextheader fz-24-sp">ミャンマーについて</span>
-                              <p class="lato-bold fz-20 myanmartextchild text-btncolor text-center fz-14-sp">About Myanmar</p>
-                          </div>
-                      </div>
-                  </div>
             </div>
-      </div>
 
-      <div class="container-fluid aboutmmcontainerfluid">
-            <div class="container aboutmmcontainer">
-                    <h6 class="text-center fw-700 fz-22 notosanjp mt120 mb30 fz-16-sp aboutmmfirstheader">アジアのラストフロンティアと呼ばれる、親日国</h6>
+         </section>
 
-                    <p class="text-center fz-16 fw-400 notosanjp fz-14-sp">ミャンマーはかつてはビルマと呼ばれていた国で、歴史的にも日本と深い関わりがあります。国民の約90%が上座部仏教を信仰する仏教徒である仏教国です。
+         <section>
+
+            <div class="container-fluid aboutmmcontainerfluid">
+               <div class="container aboutmmcontainer">
+                       <h6 class="text-center fw-700 fz-22 notosanjp mt120 mb30 fz-16-sp aboutmmfirstheader">アジアのラストフロンティアと呼ばれる、親日国</h6>
+   
+                       <p class="text-center fz-16 fw-400 notosanjp fz-14-sp aboutmmparagraph">ミャンマーはかつてはビルマと呼ばれていた国で、歴史的にも日本と深い関わりがあります。国民の約90%が上座部仏教を信仰する仏教徒である仏教国です。
                         家族を大切にする、年上の人を敬う、嘘をつかない、他人に分け与えるなど仏教の教えを幼少期から学んでおり、介護実習生としても適性の高い方が多くいらっしゃいます。
                         また、自己主張が強くなく、日本人の価値観と近い国民性です。</p>
-
-                    
+   
                        
-
-                    
-                    <div class="myanmarinformationbox">
-
-                        <h1 class="myanmarinfoheader fz-32 notosanjp text-center text-btncolor fz-20-sp">ミャンマー基本情報</h1>
-                        <p class="lato-bold text-limegreen fz-20 text-center fz-14-sp fw-700">Myanmar  Information</p>
-
-
-                        <div class="infogridbox">
-                             <div class="inforows">
-                                <div class="info_left">人口</div>
-                                <div class="info_right">5,797万人（2023年推計値、出所：米国中央情報局）</div>
-                             </div>
-                             <div class="inforows">
-                                <div class="info_left">面積</div>
-                                <div class="info_right">67㎢（日本の約1.8倍）</div>
-                             </div>
-                             <div class="inforows">
-                                <div class="info_left">首都</div>
-                                <div class="info_right">ネピードー（経済の中心地はヤンゴン）</div>
-                             </div>
-                             <div class="inforows">
-                                <div class="info_left">宗教</div>
-                                <div class="info_right">上座部仏教（国民の約90％）</div>
-                             </div>
-                        </div>
-
-                        <h1 class="text-center notosanjp fz-32 fw-700 text-btncolor fz-20-sp">提携送り出し機関・日本語学校</h1>
-                        <p class="text-center lato-bold fz-20 text-limegreen fz-14-sp mt8">About  School</p>
-                        <p class="text-center aboutschooltext fz-16 fz-14-sp">北海道福祉介護事業協同組合では、ミャンマーにある日本語学校と提携を結んでおります。
-                            実習生として来日する前に、日本語と日本での生活の情報、介護実習生として事前に学習しておいた方がいい内容を学習できる環境を用意しております。</p>
-
-                            <div class="infogridbox infogridbox_two">
-                                <h2>
-                                    <ul class="aboutschoolheader">
-                                        <li>
-                                            提携送り出し期間
-                                        </li>
-                                    </ul>
-                                </h2>
+                          
+   
+                       
+                       <div class="myanmarinformationbox">
+   
+                           <h1 class="myanmarinfoheader fz-32 notosanjp text-center text-btncolor fz-20-sp">ミャンマー基本情報</h1>
+                           <p class="lato-bold text-limegreen fz-20 text-center fz-14-sp fw-700">Myanmar  Information</p>
+   
+   
+                           <div class="infogridbox">
                                 <div class="inforows">
-                                   <div class="info_left">社名</div>
-                                   <div class="info_right">Tagrit Co., Ltd.</div>
+                                   <div class="info_left">人口</div>
+                                   <div class="info_right">5,797万人（2023年推計値、出所：米国中央情報局）</div>
                                 </div>
                                 <div class="inforows">
-                                   <div class="info_left">代表</div>
-                                   <div class="info_right">Aung Pyae Tun</div>
+                                   <div class="info_left">面積</div>
+                                   <div class="info_right">67㎢（日本の約1.8倍）</div>
                                 </div>
                                 <div class="inforows">
-                                   <div class="info_left">設立</div>
-                                   <div class="info_right">20XX年XX月XX日</div>
+                                   <div class="info_left">首都</div>
+                                   <div class="info_right">ネピードー（経済の中心地はヤンゴン）</div>
                                 </div>
                                 <div class="inforows">
-                                   <div class="info_left">許可</div>
-                                   <div class="info_right">XXXXXXX</div>
+                                   <div class="info_left">宗教</div>
+                                   <div class="info_right">上座部仏教（国民の約90％）</div>
                                 </div>
                            </div>
-
-
-
-
-
-                           <div class="infogridbox infogridbox_three">
-                            <h2>
-                                <ul class="aboutschoolheader">
-                                    <li>
-                                        提携日本語学校
-                                    </li>
-                                </ul>
-                            </h2>
-                            <div class="inforows">
-                               <div class="info_left">社名</div>
-                               <div class="info_right">Japan Training Center</div>
-                            </div>
-                            <div class="inforows">
-                               <div class="info_left">代表</div>
-                               <div class="info_right">Aung Pyae Tun　竹之下 一也</div>
-                            </div>
-                            <div class="inforows">
-                               <div class="info_left">設立</div>
-                               <div class="info_right">2017年2月14日</div>
-                            </div>
-                            <div class="inforows">
-                               <div class="info_left">許可</div>
-                               <div class="info_right">ミャンマー政府教育部門　教育機関許可番号【181020329】</div>
-                            </div>
+   
+                           <h1 class="text-center notosanjp fz-32 fw-700 text-btncolor fz-20-sp">提携送り出し機関・日本語学校</h1>
+                           <p class="text-center lato-bold fz-20 text-limegreen fz-14-sp mt8">About  School</p>
+                           <p class="text-center aboutschooltext fz-16 fz-14-sp">北海道福祉介護事業協同組合では、ミャンマーにある日本語学校と提携を結んでおります。
+                               実習生として来日する前に、日本語と日本での生活の情報、介護実習生として事前に学習しておいた方がいい内容を学習できる環境を用意しております。</p>
+   
+                               <div class="infogridbox infogridbox_two">
+                                   <h2>
+                                       <ul class="aboutschoolheader">
+                                           <li>
+                                               提携送り出し期間
+                                           </li>
+                                       </ul>
+                                   </h2>
+                                   <div class="inforows">
+                                      <div class="info_left">社名</div>
+                                      <div class="info_right">Tagrit Co., Ltd.</div>
+                                   </div>
+                                   <div class="inforows">
+                                      <div class="info_left">代表</div>
+                                      <div class="info_right">Aung Pyae Tun</div>
+                                   </div>
+                                   <div class="inforows">
+                                      <div class="info_left">設立</div>
+                                      <div class="info_right">20XX年XX月XX日</div>
+                                   </div>
+                                   <div class="inforows">
+                                      <div class="info_left">許可</div>
+                                      <div class="info_right">XXXXXXX</div>
+                                   </div>
+                              </div>
+   
+   
+   
+   
+   
+                              <div class="infogridbox infogridbox_three">
+                               <h2>
+                                   <ul class="aboutschoolheader">
+                                       <li>
+                                           提携日本語学校
+                                       </li>
+                                   </ul>
+                               </h2>
+                               <div class="inforows">
+                                  <div class="info_left">社名</div>
+                                  <div class="info_right">Japan Training Center</div>
+                               </div>
+                               <div class="inforows">
+                                  <div class="info_left">代表</div>
+                                  <div class="info_right">Aung Pyae Tun　竹之下 一也</div>
+                               </div>
+                               <div class="inforows">
+                                  <div class="info_left">設立</div>
+                                  <div class="info_right">2017年2月14日</div>
+                               </div>
+                               <div class="inforows">
+                                  <div class="info_left">許可</div>
+                                  <div class="info_right">ミャンマー政府教育部門　教育機関許可番号【181020329】</div>
+                               </div>
+                          </div>
                        </div>
-                    </div>
-            </div>
-      </div>
-
-
-
-      
-
-         
-
-        
-            
-         <div class="container-fluid">
-            <div class="container">
-          
-            </div>
-         </div>
-
-            <div class="floatbutton displaycenter">
-               <div class="pagetop displaycenter">
-                  <img src="./icons/top.png" alt="scrolltop" />
                </div>
             </div>
-            
-         
+   
+         </section>
 
-         <footer id="footer-main">
-            <p class="copyrighttext lato-bold fz-14">
-               &copy;北海道福祉介護事業協同組合
-            </p>
-         </footer>
+      </main>
+
+              
+      <div class="floatbutton displaycenter">
+         <div class="pagetop displaycenter d-none">
+            <img src="./icons/top.png" alt="scrolltop" />
+         </div>
+      </div>
+
+      <footer id="footer-main">
+         
+         <p class="copyrighttext lato-bold fz-14">
+            &copy;北海道福祉介護事業協同組合
+         </p>
+
+      </footer>
+
       
+      
+      <!-- js -->
+      <!-- Alpine -->
+      <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+      <!-- jquery  -->
+      <script src="js/jquery-3.7.1.min.js"></script>
+
+      <!-- custom js  -->
+      <script src="js/common.js"></script>
    </body>
 </html>

@@ -38,6 +38,9 @@ $(document).ready(function() {
         $(this).addClass("active");
      });
 
+     
+     
+  
     
           $(window).scroll(function(){
                const footerMain = $("#footer-main");

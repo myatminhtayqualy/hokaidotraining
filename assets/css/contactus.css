@@ -49,10 +49,12 @@
 .contactustextcontainer p {
   margin-top: 0;
   padding: 0;
+  line-height: 1.8;
 }
 
 .contactusmaintext {
   margin-bottom: 55px;
+  line-height: 1.9;
 }
 
 .contactusspan {
@@ -108,8 +110,24 @@ input[type="checkbox"]:checked::after {
 
 .underlinediv {
   display: inline-block;
-  border-bottom: 2px solid black;
-  padding-bottom: 2px;
+  position: relative;
+  font-weight: 800;
+}
+
+.underlinediv::before {
+  content: "";
+
+  width: 89%;
+  height: 3px;
+  background-color: black;
+
+  position: absolute;
+  bottom: -8px;
+  left: 9px;
+}
+
+.underlinetext {
+  line-height: 1.9;
 }
 
 .customCheckbox {
@@ -181,5 +199,9 @@ input[type="checkbox"]:checked::after {
   .contactusbtn {
     max-width: 345px;
     height: 60px;
+  }
+
+  .underlinediv::before {
+    bottom: 1px;
   }
 }

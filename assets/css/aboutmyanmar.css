@@ -24,12 +24,16 @@ body {
 }
 
 .aboutmyanmarcontainertwo {
-  padding: 0px 10px;
+  padding: 1px 10px;
 }
 
 .aboutmmcontainerfluid {
   width: 100%;
   background-color: #fff;
+}
+
+.aboutmmparagraph {
+  line-height: 1.9;
 }
 
 ul.breadcrumb {
@@ -72,6 +76,7 @@ ul.breadcrumb li a:hover {
   background-size: contain;
 
   margin: 0 auto;
+  padding: 20px 0px;
 
   margin-bottom: 49px;
 
@@ -155,6 +160,7 @@ ul.breadcrumb li a:hover {
 .aboutschooltext {
   margin-top: 60px;
   margin-bottom: 30px;
+  line-height: 1.9;
 }
 
 .aboutschoolheader li {
@@ -169,6 +175,16 @@ ul.breadcrumb li a:hover {
   font-size: 20px; /* Size of the square */
   padding-right: 0px; /* Space between the square and text */
   border-radius: 5px;
+}
+
+@media screen and (max-width: 926px) {
+  .container {
+    padding: 0px 10px;
+  }
+
+  .aboutmyanmarcontainertwo {
+    padding: 1px 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -190,5 +206,14 @@ ul.breadcrumb li a:hover {
 
   .aboutschoolheader li {
     font-size: 16px;
+    font-weight: 700;
+  }
+
+  .aboutschooltext {
+    text-align: justify;
+  }
+
+  .aboutmmparagraph {
+    text-align: justify;
   }
 }
