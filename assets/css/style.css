@@ -76,7 +76,7 @@ body.noscroll {
 
 .lato-bold {
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -320,6 +320,10 @@ ul {
   border-radius: 5px;
 }
 
+.datelink a.datelinktext {
+  color: white;
+}
+
 .leftcontainer {
   width: 100%;
   display: flex;
@@ -408,7 +412,7 @@ ul {
 }
 
 .textcontainer {
-  width: 40%;
+  width: 42%;
   max-width: 520px;
 
   height: auto;
@@ -442,16 +446,17 @@ ul {
 }
 
 .bannerphotocontainer {
-  width: 60%;
+  width: 58%;
 
   position: relative;
   /* background-color: yellow; */
 }
 
 .bannerphoto {
+  width: 100%;
   position: absolute;
   bottom: -337px;
-  left: -15px;
+  left: 80px;
 }
 
 .bannerphoto img {
@@ -460,11 +465,11 @@ ul {
 
 .bannerbtn {
   width: 100%;
-  max-width: 240px;
-  height: 60px;
+  max-width: 400px;
+  height: 80px;
   background: var(--limegreen);
 
-  border-radius: 30px;
+  border-radius: 40px;
   margin-left: 60px;
 
   display: flex;
@@ -488,7 +493,7 @@ ul {
 }
 
 .childtextcontainer {
-  max-width: 400px;
+  max-width: 630px;
   height: auto;
   min-height: 157px;
 
@@ -498,6 +503,12 @@ ul {
   align-items: center;
 
   margin-bottom: 40px;
+}
+
+.childtextcontainer h2 {
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .leftcontainerchild {
@@ -609,10 +620,11 @@ ul {
 .aboutmyanmarbtn,
 .accordionbtn {
   background: var(--btncolor);
-  width: 320px;
-  height: 60px;
+  width: 100%;
+  max-width: 400px;
+  height: 80px;
 
-  border-radius: 30px;
+  border-radius: 40px;
 
   font-size: 18px;
 
@@ -698,6 +710,7 @@ h2.aboutmyanmarengheader {
 .aboutus_subheader {
   margin-top: 60px;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .myanmarcontainer {
@@ -999,20 +1012,20 @@ footer {
 
 /* news page start */
 .news-mv {
-  /* padding-top: 30px; */
+  padding-top: 30px;
   font-family: "Noto Sans JP";
 }
 
 .second-container {
-  max-width: 1400px;
+  max-width: 1440px;
   /* padding: 0 20px; */
   margin: 0 auto;
 }
 
-
-.mv-heading{
+.news-mv .second-container .heading-blk {
   background: url(../img/bannermap.png) no-repeat center/contain;
-  height: 320px;
+  padding-top: 12px;
+  padding-bottom: 160px;
 }
 
 .page-name {
@@ -1023,11 +1036,11 @@ footer {
   color: #000000;
   gap: 30px;
 }
-.page-name span{
+.page-name span a {
   color: #000000;
   position: relative;
 }
-.page-name span::before {
+.page-name span a::before {
   content: "";
   background: url(../img/Component.png) no-repeat center/contain;
   width: 10px;
@@ -1035,7 +1048,7 @@ footer {
   position: absolute;
   display: block;
   left: -17px;
-  top: 2px;
+  top: 6px;
 }
 
 .news-mv .second-container .news-heading {
@@ -1043,10 +1056,9 @@ footer {
   font-size: 32px;
   font-weight: 400;
   color: #000000;
-  padding-top: 137px;
+  padding-top: 160px;
   padding-bottom: 17px;
   margin: 0;
-  padding-right: 175px;
 }
 
 .news-mv .second-container .mean {
@@ -1055,7 +1067,6 @@ footer {
   font-weight: 700;
   font-family: "lato";
   color: #307c4f;
-  padding-right: 175px;
 }
 
 .sec-notice {
@@ -1125,7 +1136,6 @@ footer {
   color: #000000;
   line-height: 1.5;
   margin-bottom: 30px;
-  letter-spacing: normal;
 }
 
 .pignation {
@@ -1170,7 +1180,7 @@ footer {
   background: #eff8e3;
   color: #307c4f;
   vertical-align: middle;
-  padding: 11px 20px;
+  padding: 12px 20px;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -1249,8 +1259,8 @@ footer {
 }
 
 /* About Page start */
-.sec-about{
-  padding-top: 90px;
+.sec-about {
+  padding-top: 120px;
   padding-bottom: 160px;
   width: 100%;
   margin: 0 auto;
@@ -1317,7 +1327,6 @@ footer {
   border-radius: 10px;
   color: #ffffff;
   font-weight: 600;
-  cursor: pointer;
 }
 .information-blk .name-description {
   /* width: calc((100% - 305px)); */
@@ -1327,39 +1336,6 @@ footer {
   font-size: 22px;
   color: #000000;
   font-weight: 400;
-  cursor: pointer;
-  line-height: 1.3;
-}
-.pagination{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.pagination li .active:hover{
-  border: 1px solid #03561E;
- border-radius: 50%;
- /* padding: 15px; */
-}
-.pagination li a{
-  color: #03561E;
-  font-size: 16px;
-  font-family: "lato";
-  font-weight: 700;
-}
-.pagination li .active{
-  padding: 9px 12px;
-border: 1px solid transparent;
-}
-/* .pagination li .active-item{
-  border: 1px solid #03561E;
-  border-radius: 50%;
-} */
-
-.page-name a{
-  color: #000000;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1367,8 +1343,13 @@ border: 1px solid transparent;
     bottom: -150px;
   }
 
+  .bannerphotocontainer {
+    width: 54%;
+  }
+
   .bannerphoto {
     bottom: -357px;
+    left: 40px;
   }
 }
 
@@ -1397,17 +1378,8 @@ border: 1px solid transparent;
   .bannerbtn {
     margin: auto;
   }
-  .information-blk {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 200px 1fr;
-    margin-bottom: 7px;
 }
-.information-blk .name {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-}
+
 @media screen and (max-width: 1024px) {
   .customnavbar {
     padding: 0px 8px;
@@ -1509,13 +1481,6 @@ border: 1px solid transparent;
   }
 
   /* end accordion section  */
-
-  .tag .tag-blk {
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-}
 }
 
 @media screen and (max-width: 926px) {
@@ -1535,6 +1500,10 @@ border: 1px solid transparent;
   }
 
   .customnavbar.bgchange {
+    background: white;
+  }
+
+  .navbarcontainerfluid.bgchange {
     background: white;
   }
 
@@ -1668,7 +1637,7 @@ border: 1px solid transparent;
   }
 
   .floatcontainer {
-    bottom: -153px;
+    bottom: -200px;
 
     grid-template-columns: 140px 1fr 200px;
   }
@@ -1678,15 +1647,40 @@ border: 1px solid transparent;
   }
 
   .bannerphoto {
-    bottom: -358px;
+    bottom: -206px;
   }
 
-  /* Custom tesing */
-  .container{
-    padding-top: 0;
+  .bannerphotocontainer {
+    width: 100%;
+    margin-top: 300px;
+  }
+
+  .textcontainer {
+    width: 100%;
+  }
+
+  .aboutus_subheader {
+    font-weight: 400;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .aboutusbtn,
+  .aboutmyanmarbtn,
+  .accordionbtn {
+    max-width: 345px;
+    height: 60px;
+  }
+
+  .bannerbtn {
+    width: 100%;
+    max-width: 345px;
+    height: 60px;
   }
 }
-/* test  */
+
 @media screen and (max-width: 768px) {
   .customnavbar {
     background: transparent;
@@ -1831,6 +1825,7 @@ border: 1px solid transparent;
   .bannerbtn {
     width: 100%;
     max-width: 345px;
+    height: 60px;
   }
 
   .bannerphotocontainer {
@@ -1839,7 +1834,7 @@ border: 1px solid transparent;
   }
 
   .bannerphoto {
-    bottom: -296px;
+    bottom: -344px;
     left: 0;
   }
 
@@ -1869,7 +1864,7 @@ border: 1px solid transparent;
   .floatcontainer {
     display: flex;
     flex-direction: column;
-    bottom: -290px;
+    bottom: -340px;
     padding: 30px 0px;
   }
 
@@ -2034,13 +2029,7 @@ border: 1px solid transparent;
 
   .page-name {
     font-size: 12px;
-    margin-bottom: 18px;
   }
-  .mv-heading{
-    height: 120px;
-    padding-bottom: 35px;
-  }
-  
 
   .news-mv .second-container .news-heading {
     font-size: 24px;
@@ -2048,11 +2037,9 @@ border: 1px solid transparent;
     padding-top: 50px;
     padding-bottom: 0;
     margin: 0;
-    padding-right: 0;
   }
 
   .news-mv {
-    
     padding-top: 0;
     /* padding-bottom: 160px; */
   }
@@ -2064,7 +2051,6 @@ border: 1px solid transparent;
     font-family: "lato";
     color: #307c4f;
     margin-top: 12px;
-    padding-right: 0;
   }
 
   .date-blk .date {
@@ -2103,73 +2089,62 @@ border: 1px solid transparent;
   .sec-about {
     padding-top: 60px;
     padding-bottom: 145px;
-}
-.sec-about .container .about-txt {
-  font-size: 14px;
-  line-height: 1.7;
-  margin-bottom: 80px;
-}
-.sec-about .container .chatbubble {
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-.chatbubble{
-  max-width: 345px;
-}
-.sec-about .container .description {
-  font-size: 16px;
-  margin-bottom: 60px;
-}
-.sec-about .container .information {
-  font-size: 20px;
-  padding-top: 55px;
-  padding-bottom: 10px;
-}
-.sec-about .container .information-jp {
-  font-size: 14px;
-  font-weight: 700;
-  padding-bottom: 30px;
-}
-.information-blk .name {
-  max-width: 60px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 100px;
-  text-align: center;
-  padding-right: 100px;
-  background-color: #03561E;
-  font-size: 22px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  font-weight: 600;
-}
-.information-blk .name {
-  max-width: 60px;
-  padding: 0 0 0 17px;
-  background-color: #03561E;
-  font-size: 14px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-.information-blk {
-  grid-template-columns: 60px 1fr;
-  margin-bottom: 7px;
-}
-.information-blk .name-description {
-  padding: 15px;
-  background-color: #F5F5F5;
-  border-radius: 5px;
-  font-size: 22px;
-  line-height: 1.7;
-}
-.tag .tag-blk {
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-}
-
+  }
+  .sec-about .container .about-txt {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 80px;
+  }
+  .sec-about .container .chatbubble {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .sec-about .container .description {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .sec-about .container .information {
+    font-size: 20px;
+    padding-top: 55px;
+    padding-bottom: 10px;
+  }
+  .sec-about .container .information-jp {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+  .information-blk .name {
+    max-width: 60px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 100px;
+    text-align: center;
+    padding-right: 100px;
+    background-color: #03561e;
+    font-size: 22px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .information-blk .name {
+    max-width: 60px;
+    padding: 0 0 0 10px;
+    background-color: #03561e;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .information-blk {
+    grid-template-columns: 60px 1fr;
+    margin-bottom: 7px;
+  }
+  .information-blk .name-description {
+    padding: 35px 0 35px 20px;
+    background-color: #f5f5f5;
+    border-radius: 14px;
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 482px) {
