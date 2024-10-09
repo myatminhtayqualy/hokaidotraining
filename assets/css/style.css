@@ -2280,6 +2280,10 @@ footer {
     font-size: 22px;
     line-height: 1.7;
   }
+  .tag .tag-blk {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 482px) {
