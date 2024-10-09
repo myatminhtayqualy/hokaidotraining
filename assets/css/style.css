@@ -2146,6 +2146,9 @@ footer {
     display: flex;
     flex-wrap: wrap-reverse;
   }
+  .sec-notice .right-blk img{
+    width: 100%;
+  }
 
   .advertisment {
     margin: 0 auto;
